@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-fixed{
+    @apply fixed bg-blue-800 opacity-95 shadow-lg z-[9999] backdrop-blur;
+}
+
+.isi-sejarah::-webkit-scrollbar-thumb { 
+    border-radius: 25px;
+}
+
+.isi-sejarah::-webkit-scrollbar-t   rack { 
+    border-radius: 25px;
+}
+
+.active{
+  @apply bg-primary;
+}
+p{
+    @apply mb-4;
+}
