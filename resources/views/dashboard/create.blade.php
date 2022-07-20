@@ -64,12 +64,16 @@
                                     <label
                                         class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Thumbnail</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <img  class="img-preview  img-fluid mb-2 d-none">
+                                        <img class="img-preview  img-fluid mb-2 d-none">
                                         <div class="custom-file">
-                                            <input type="file"
-                                                class="custom-file-input "
-                                                id="customFile" name="image" onchange="previewImage()">
+                                            <input type="file" class="custom-file-input @error('image') is-invalid @enderror" id="customFile" name="image"
+                                                onchange="previewImage()" >
                                             <label class="custom-file-label" for="customFile">Choose file</label>
+                                            @error('image')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                            @enderror
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +102,8 @@
         </div>
     </section>
 
-    
- 
+
+
 </div>
 
 <script>
@@ -111,9 +115,6 @@
         .then(response => response.json())
         .then(data => slug.value = data.slug)
     })
-
-
-   
 
 
     

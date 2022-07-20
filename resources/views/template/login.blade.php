@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/hamburgers.css" rel="stylesheet">
 </head>
@@ -29,12 +28,12 @@
 
     <footer class="pb-5   bg-dark  text-slate-500">
         <div class="container px-4 lg:max-w-full lg:px-16 mx-auto">
-           
+
 
             <div class="copy-footer pt-5 w-full  border-t border-slate-300 text-slate">
                 <div class="flex items-center justify-center">
                     <!-- Instagram -->
-                    <a href="#"
+                    <a href="https://instagram.com/pmiicabangciputatofficial" target="blank"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-first  hover:border-first hover:bg-first hover:text-white text-slate-500 transition duration-300">
                         <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +43,7 @@
                         </svg>
                     </a>
                     <!-- Facebook -->
-                    <a href="#"
+                    <a href="https://facebook.com/pmiicabangciputatofficial" target="blank"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-first  hover:border-first hover:bg-first hover:text-white text-slate-500 transition duration-300">
                         <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -54,14 +53,14 @@
                         </svg>
                     </a>
 
-                    <!-- Twitter -->
-                    <a href="#"
+                    <!-- Youtube -->
+                    <a href="https://www.youtube.com/channel/UCxvKDV_egkihE5IFeDeclZA" target="blank"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-first  hover:border-first hover:bg-first hover:text-white text-slate-500 transition duration-300">
-                        <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24"
+                        <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
-                            <title>Twitter</title>
+                            <title>YouTube</title>
                             <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                     </a>
 
@@ -79,46 +78,7 @@
 
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        
-        const gridimg = document.querySelectorAll(".grid-img");
-        const tokoh = document.querySelectorAll(".tokoh");
-        const docimg = document.querySelectorAll(".doc-img");
-        const cardAnimate = document.querySelectorAll(".card-animate")
-        const bidangSatu = document.querySelectorAll(".bidang-satu")
-        const bidangDua = document.querySelectorAll(".bidang-dua")
-        const bidangTiga = document.querySelectorAll(".bidang-tiga")
 
-		gridimg.forEach((grid, i) => {
-			grid.dataset.aos = 'fade-down';
-			grid.dataset.aosDelay = i * 200;
-			grid.dataset.aosDuration = 500;
-			grid.dataset.anchorPlacement = "top-bottom";
-		})
-        tokoh.forEach((tk, j) => {
-			tk.dataset.aos = 'flip-left';
-			tk.dataset.aosDelay = j * 200;
-			tk.dataset.aosDuration = 500;
-			// grid.dataset.anchorPlacement = "top-bottom";
-		})
-        docimg.forEach((dc, k) => {
-			dc.dataset.aos = 'fade-up-right';
-			dc.dataset.aosDelay = k * 200;
-			dc.dataset.aosDuration = 500;
-			// grid.dataset.anchorPlacement = "top-bottom";
-		})
-
-        cardAnimate.forEach((ca, s) => {
-			ca.dataset.aos = 'zoom-in';
-			ca.dataset.aosDelay = s * 100;
-			ca.dataset.aosDuration = 500;
-		
-		})
-       
-        AOS.init();
-    </script>
     <script>
         var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
 
@@ -131,16 +91,6 @@
     });
     }
 
-    var typed2 = new Typed('#slogan', {
-    strings: ['Dzikir', 'Fikir', 'Amal sholeh'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    backDelay: 1000,
-    startDelay: 500,
-    loop: true,
-    smartBackspace: true,
-    showCursor:false
-  });
     </script>
 
     <script src="/js/myscript.js"></script>

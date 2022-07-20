@@ -18,6 +18,11 @@
                 {{ session('message') }}
             </div>
             @endif
+            @if (session('success'))
+            <div class="flash w-full p-5 rounded-lg mb-3 mx-auto lg:w-1/3 md:max-w-xl bg-green-300 text-green-600">
+                {{ session('success') }}
+            </div>
+            @endif
             <div
                 class="p-6 rounded-lg shadow-lg shadow-slate-300 border-2 border-t-4 border-t-first   mx-auto lg:w-1/3 md:max-w-xl">
 
@@ -52,7 +57,8 @@
                         <button type="submit" class="px-4 py-2 bg-first w-full rounded-lg text-white">Submit</button>
                     </div>
                     <div class="w full mb-4">
-                        <a href="" class="block text-center text-sm mb-1 text-blue-600">Forgot Password</a>
+                        <a href="/login/forgotpassword" class="block text-center text-sm mb-1 text-blue-600">Forgot
+                            Password</a>
                         <a href="/" class="block text-center text-sm mb-1 text-blue-600">Back to Home</a>
                     </div>
                 </form>

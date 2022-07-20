@@ -57,8 +57,8 @@
                                                 <form action="/dashboard/program/{{ $program->slug }}" method="post" class="d-inline" >
                                                     @method('delete')
                                                     @csrf
-                                                    <button type="submit" class="btn btn-danger border-0 mx-1"><i
-                                                        class="fas fa-trash-alt" onclick="return confirm('Are you sure ?')"></i></button>
+                                                    <button type="submit" class="btn btn-danger border-0 mx-1" onclick="return confirm('Are you sure ?')"><i
+                                                        class="fas fa-trash-alt" ></i></button>
 
                                                 </form>
                                                

@@ -15,6 +15,15 @@ class Categoryprogram extends Model
     {
         return $this->hasMany(Program::class);
     }
+    public function news()
+    {
+        return $this->hasMany(News::class);
+    }
+
+    public function award()
+    {
+        return $this->hasMany(Award::class);
+    }
 
     public function getRouteKeyName()
     {

@@ -27,8 +27,8 @@
 
 
                     @if ($program->image)
-                    <img src="{{ asset('storage/'.$program->image) }}"
-                        class="card-img-top" style="border-radius: 20px" alt="{{ $program->categoryprogram->name }}">
+                    <img src="{{ asset('storage/'.$program->image) }}" class="card-img-top" style="border-radius: 20px"
+                        alt="{{ $program->categoryprogram->name }}">
                     @else
                     <img src=" https://source.unsplash.com/1200x600?{{ $program->categoryprogram->name }}"
                         class="card-img-top" style="border-radius: 20px" alt="{{ $program->categoryprogram->name }}">
@@ -42,17 +42,16 @@
                     </article>
                     <div class="group-button mt-5 mb-5 d-inline">
                         <a href="/dashboard/program" class="btn btn-success px-3"><i
-                                class="fas fa-long-arrow-alt-left"></i> Back to My Programs</a>
-
+                                class="fas fa-long-arrow-alt-left"></i> Back to All Program</a>
                         <a href="/dashboard/program/{{ $program->slug }}/edit" class="btn btn-primary"><i
                                 class="fas fa-edit"></i>
                             Edit</a>
 
-                        <form action="/dashboard/program/" method="post" class="d-inline">
+                        <form action="/dashboard/program/{{ $program->slug }}" method="post" class="d-inline">
                             @method('delete')
                             @csrf
-                            <button type="submit" class="btn btn-danger border-0 mx-1 rounded-full"><i
-                                    class="fas fa-trash-alt" onclick="return confirm('Are you sure ?')"></i>
+                            <button type="submit" class="btn btn-danger border-0 mx-1 rounded-full"
+                                onclick="return confirm('Are you sure ?')"><i class="fas fa-trash-alt"></i>
                                 Delete</button>
                         </form>
                     </div>

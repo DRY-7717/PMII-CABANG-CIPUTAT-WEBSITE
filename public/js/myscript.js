@@ -1,9 +1,9 @@
-$(".custom-file-input").on("change", function () {
-    let filename = $(this).val().split("\\").pop();
-    $(this).next(".custom-file-label").addClass("selected").html(filename);
-});
 
 
+
+
+const hamburger = document.querySelector('#hamburger');
+const nav = document.querySelector('#nav-menu');
 
 window.onscroll = function () {
     const header = document.querySelector('.header');
@@ -19,13 +19,11 @@ window.onscroll = function () {
 
 
 
-const hamburger = document.querySelector('#hamburger');
-const nav = document.querySelector('#nav-menu');
-
 
 hamburger.addEventListener('click', function () {
     nav.classList.toggle('hidden');
 })
+
 
 const li = document.querySelectorAll('.links');
 const sec = document.querySelectorAll('section');
@@ -42,15 +40,16 @@ activemenu();
 
 window.addEventListener('scroll', activemenu);
 
-function previewImage(){
+function previewImage() {
     const imagePreview = document.querySelector('.img-preview');
     const image = document.querySelector('#customFile');
     const ofReader = new FileReader();
 
-    imagePreview.classList.replace('d-none','d-block')
+    imagePreview.classList.replace('d-none', 'd-block')
 
     ofReader.readAsDataURL(image.files[0]);
-    ofReader.onload = function (ofREvent) { 
+    ofReader.onload = function (ofREvent) {
         imagePreview.src = ofREvent.target.result;
-     }
+    }
 }
+

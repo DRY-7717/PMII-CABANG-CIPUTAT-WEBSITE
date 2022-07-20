@@ -17,8 +17,8 @@ class AllCategoryController extends Controller
     {
         //
 
-        
-        
+
+
         return view('dashboard.categories.index', [
             'title' => 'PMII Cabang Ciputat | All category',
             'categories' => Categoryprogram::all()
@@ -55,7 +55,7 @@ class AllCategoryController extends Controller
 
         Categoryprogram::create($validatedData);
 
-        return redirect('/dashboard/categoryprogram')->with('message','<div class="alert alert-success" role="alert">
+        return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
         Your program has been added
       </div>');
     }
@@ -70,7 +70,6 @@ class AllCategoryController extends Controller
     {
         //
         return $categoryprogram;
-
     }
 
     /**
@@ -82,6 +81,10 @@ class AllCategoryController extends Controller
     public function edit(Categoryprogram $categoryprogram)
     {
         //
+        return view('dashboard.categories.edit', [
+            'title' => 'PMII Cabang Ciputat | Edit category',
+            'category' => $categoryprogram
+        ]);
     }
 
     /**
@@ -94,6 +97,23 @@ class AllCategoryController extends Controller
     public function update(Request $request, Categoryprogram $categoryprogram)
     {
         //
+
+        $rules = [
+            'name' => 'required|max:255'
+        ];
+
+        if ($categoryprogram->slug != $request->slug) {
+            $rules['slug'] = 'required';
+        }
+
+        $validated = $request->validate($rules);
+
+        Categoryprogram::where('id', $categoryprogram->id)
+            ->update($validated);
+
+        return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
+        Your program has been updated
+      </div>');
     }
 
     /**
@@ -106,7 +126,7 @@ class AllCategoryController extends Controller
     {
         //
 
-        Categoryprogram::destroy('id', $categoryprogram->id);
+        Categoryprogram::destroy($categoryprogram->id);
 
         return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
         Your program has been deleted

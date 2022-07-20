@@ -172,6 +172,6 @@ class DashboardProgramController extends Controller
     public function checkslug(Request $request)
     {
         $slug = SlugService::createSlug(Program::class, 'slug', $request->title);
-        return response()->json(['slug' => $slug]);;
+        return response()->json(['slug' => $slug]);
     }
 }

@@ -7,11 +7,15 @@
     @apply fixed bg-blue-800 opacity-95 shadow-lg z-[9999] backdrop-blur;
 }
 
+.atas{
+   @apply z-[9999];
+}
+
 .isi-sejarah::-webkit-scrollbar-thumb { 
     border-radius: 25px;
 }
 
-.isi-sejarah::-webkit-scrollbar-t   rack { 
+.isi-sejarah::-webkit-scrollbar-t{ 
     border-radius: 25px;
 }
 

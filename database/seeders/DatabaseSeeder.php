@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Award;
 use Illuminate\Database\Seeder;
 use App\Models\Program;
 use App\Models\Categoryprogram;
+use App\Models\News;
+use App\Models\Secretary;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -17,8 +20,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
+        User::factory(11)->create();
         Program::factory(25)->create();
+        News::factory(25)->create();
+        Award::factory(25)->create();
+        Secretary::factory(25)->create();
+
         Categoryprogram::create([
             'name' => 'Web Programming',
             'slug' => 'webprogramming',
@@ -29,14 +36,35 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-           'name' => 'PMII Cabang Ciputat',
-           'title' => 'PC. Ciputat',
-           'initials' => 'CC',
-           'username' => 'pmiicabangciputat',
-           'email' => 'pmiicabangciputat@gmail.com',
-           'password' => Hash::make('password') 
+            'name' => 'PMII Cabang Ciputat',
+            'title' => 'PC. Ciputat',
+            'initials' => 'CC',
+            'username' => 'pmiicabangciputat',
+            'email' => 'wicaksanabimaarya01@gmail.com',
+            'role' => 1,
+            'password' => Hash::make('password')
         ]);
-        
+        User::create([
+            'name' => 'Sekertaris PC.PMII Ciputat',
+            'title' => 'Sek. Ciputat',
+            'initials' => 'SPC',
+            'username' => 'sekertarispmiiciputat',
+            'email' => 'wicaksana@gmail.com',
+            'role' => 2,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII Komnivpam',
+            'title' => 'PK. Unpam',
+            'initials' => 'PKU',
+            'username' => 'pmiikomnivpam',
+            'email' => 'wicaksana01@gmail.com',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+
+
+
 
         // Program::create([
         //     'categoryprogram_id' => 2,

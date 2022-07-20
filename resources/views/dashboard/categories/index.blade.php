@@ -13,12 +13,13 @@
             <div class="row">
                 <div class="col-12">
                     @if (session('message'))
-                        {!! session('message') !!}
+                    {!! session('message') !!}
                     @endif
                     <div class="card shadow rounded-lg">
                         <div class="card-header flex justify-content-between">
                             <h4>Categories</h4>
-                            <a href="/dashboard/categoryprogram/create" class="btn btn-primary px-3 py-1" style="font-size: 14px"><i class="fas fa-plus"></i> Create new category</a>
+                            <a href="/dashboard/categoryprogram/create" class="btn btn-primary px-3 py-1"
+                                style="font-size: 14px"><i class="fas fa-plus"></i> Create new category</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -45,19 +46,19 @@
                                             </td>
 
                                             <td class="d-flex">
-                                                <a href="/dashboard/categoryprogram/{{ $category->slug }}"
-                                                    class="btn btn-info mx-1"><i class="fas fa-eye"></i></a>
+                                                <a href="/dashboard/categoryprogram/{{ $category->slug }}/edit"
+                                                    class="btn btn-primary mx-1"><i class="fas fa-edit"></i></a>
 
-                                                <a href="/dashboard/categoryprogram/{{ $category->slug }}/edit" class="btn btn-primary mx-1"><i class="fas fa-edit"></i></a>
-
-                                                <form action="/dashboard/categoryprogram/{{ $category->slug }}" method="post" class="d-inline" >
+                                                <form action="/dashboard/categoryprogram/{{ $category->slug }}"
+                                                    method="post" class="d-inline">
                                                     @method('delete')
                                                     @csrf
-                                                    <button type="submit" class="btn btn-danger border-0 mx-1"><i
-                                                        class="fas fa-trash-alt" onclick="return confirm('Are you sure ?')"></i></button>
+                                                    <button type="submit" class="btn btn-danger border-0 mx-1"
+                                                        onclick="return confirm('Are you sure ?')"><i
+                                                            class="fas fa-trash-alt"></i></button>
 
                                                 </form>
-                                               
+
 
                                             </td>
                                         </tr>
@@ -74,6 +75,3 @@
     </section>
 </div>
 @endsection
-
-
-

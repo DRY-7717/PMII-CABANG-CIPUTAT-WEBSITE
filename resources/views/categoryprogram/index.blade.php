@@ -8,7 +8,8 @@
 <section class="pt-36 pb-32">
     <div class="container mx-auto px-4 lg:px-16 lg:max-w-full">
         <div class="w-full px-4 mb-12">
-            <h2 class="text-lg font-semibold text-slate-400 uppercase mb-6 lg:text-center lg:text-xl">{{ $littletittle }}</h2>
+            <h2 class="text-lg font-semibold text-slate-400 uppercase mb-6 lg:text-center lg:text-xl">{{ $littletittle
+                }}</h2>
             <h1
                 class="text-xl md:text-3xl lg:text-4xl lg:text-center lg:mb-14 uppercase font-black text-first tracking-wide">
                 {{ $bigtitle }}</h1>
@@ -44,7 +45,11 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @foreach ($programs->skip(1) as $program)
                 <div class="card p-6 rounded-lg shadow-xl shadow-slate-300  overflow-hidden">
+                    @if ($program->image)
+                    <img src="{{ asset('storage/'.$program->image) }}" alt="" class="w-full rounded-xl md:h-48">
+                    @else
                     <img src="https://source.unsplash.com/1200x600" alt="" class="w-full rounded-xl md:h-48">
+                    @endif
                     <div class="card-body py-4 ">
                         <div class="card-body  py-4 ">
                             <h1 class="text-lg md:text-xl font-semibold text-first"><a

@@ -25,7 +25,9 @@ class ProgramController extends Controller
         return view('program.index',[
             'title' => 'PMII Cabang Ciputat | Programs',
             'programs' => Program::latest()->filter(request(['search','category','user']))->paginate(7)->withQueryString(),
-            'bigtitle' => 'All Program ' . $title
+            'bigtitle' => 'All Program ' . $title,
+            'categories' => Categoryprogram::all(),
+            'users' => User::all()
         ]);
     }
 

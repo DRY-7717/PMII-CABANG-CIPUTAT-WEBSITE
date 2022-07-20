@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>{{ $title }}</title>
-    <link rel="shortcut icon" href="/img/pmii.png">
+
+    <link rel="shortcut icon" href="/img/pmii.png" type="image/x-icon">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="/assets/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/modules/fontawesome/css/all.min.css">
@@ -42,7 +43,6 @@
 <body>
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
-
             @include('layout.navbar')
             @include('layout.sidebar')
             @yield('section')
@@ -87,6 +87,12 @@
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/custom.js"></script>
     <script src="/js/myscript.js"></script>
+    <script>
+        $(".custom-file-input").on("change", function () {
+    let filename = $(this).val().split("\\").pop();
+    $(this).next(".custom-file-label").addClass("selected").html(filename);
+});
+    </script>
 </body>
 
 </html>

@@ -51,7 +51,7 @@
                                     <div class="col-sm-12 col-md-7">
                                         <select class="form-control selectric" name="categoryprogram_id" id="category">
                                             @foreach ($categories as $category)
-                                            @if (old('categoryprogram_id') == $category->id)
+                                            @if (old('categoryprogram_id',$program->categoryprogram_id) == $category->id)
                                             <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
                                             @else
                                             <option value="{{ $category->id }}">{{ $category->name }}</option>

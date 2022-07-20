@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
-    <link rel="shortcut icon" href="/img/pmii.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,9 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{--
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> --}}
+    <link rel="shortcut icon" href="/img/pmii.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/aos.css">
+    {{--
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> --}}
+
+    <link rel="stylesheet" href="/css/swiper-bundle.css">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/hamburgers.css" rel="stylesheet">
+
 </head>
 
 <body class="font-rubik text-second " id="home">
@@ -37,8 +45,8 @@
                         Mahasiswa
                         Islam Indonesia</p>
                     <p class="text-sm font-thin mb-1">pmiicabangciputatofficial@gmail.com</p>
-                    <p class="text-sm font-thin">Musholla Al Barkah. Jl. Kodiklat TNI, Gang Masjid RT.04 RW.03 Buaran,
-                        Kec.Serpong, Kota Tangerang Selatan, Banten 15610 </p>
+                    <p class="text-sm font-thin">Jl. Ibnu Sina I, Pisangan, Kec. Ciputat Tim., Kota Tangerang
+                        Selatan, Banten 15419</p>
                 </div>
 
                 <div class="w-full p-6  mb-4 md:w-1/3 lg:w-1/3">
@@ -58,16 +66,11 @@
                 <div class="w-full p-6  mb-4 md:w-1/3 lg:w-1/3">
                     <h3 class="text-xl mt-1 mb-2 text-white font-semibold">Social Media</h3>
                     <a href="#about" class="block hover:text-primary mb-3"><i class="fa-solid fa-angle-right mr-2"></i>
-                        Email</a>
-                    <a href="#about" class="block hover:text-primary mb-3"><i class="fa-solid fa-angle-right mr-2"></i>
                         Facebook</a>
                     <a href="#home" class="block hover:text-primary mb-3"><i class="fa-solid fa-angle-right mr-2"></i>
                         Instagram</a>
                     <a href="#portofolio" class="block hover:text-primary mb-3"><i
                             class="fa-solid fa-angle-right mr-2"></i> Twitter</a>
-                    <a href="https://www.youtube.com/channel/UCxvKDV_egkihE5IFeDeclZA" target="blank"
-                        class="block hover:text-primary mb-3"><i class="fa-solid fa-angle-right mr-2"></i>
-                        Youtube</a>
                 </div>
             </div>
 
@@ -94,14 +97,14 @@
                         </svg>
                     </a>
 
-                    <!-- Twitter -->
-                    <a href="#"
+                    <!-- Youtube -->
+                    <a href="https://www.youtube.com/channel/UCxvKDV_egkihE5IFeDeclZA" target="blank"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-cyan-500  hover:border-cyan-500 hover:bg-cyan-500 hover:text-white text-white transition duration-300">
-                        <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24"
+                        <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
-                            <title>Twitter</title>
+                            <title>YouTube</title>
                             <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
                     </a>
 
@@ -119,8 +122,13 @@
 
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {{-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> --}}
+    <script src="/js/swiper-bundle.js"></script>
+    {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> --}}
+    <script src="/js/aos.js"></script>
+    <script src="/js/myscript.js"></script>
     <script>
         const gridimg = document.querySelectorAll(".grid-img");
         const tokoh = document.querySelectorAll(".tokoh");
@@ -129,6 +137,8 @@
         const bidangSatu = document.querySelectorAll(".bidang-satu")
         const bidangDua = document.querySelectorAll(".bidang-dua")
         const bidangTiga = document.querySelectorAll(".bidang-tiga")
+        const slogan = document.querySelectorAll('.slogan')
+        const visions = document.querySelectorAll('.visi')
 
 		gridimg.forEach((grid, i) => {
 			grid.dataset.aos = 'fade-down';
@@ -155,34 +165,56 @@
 			ca.dataset.aosDuration = 500;
 		
 		})
+
+        slogan.forEach((s,i) => {
+            s.dataset.aos = 'fade-down',
+            s.dataset.aosDelay = i * 500
+            s.dataset.aosDuration = 700
+        });
+        visions.forEach((v,i) => {
+            v.dataset.aos = 'fade-down',
+            v.dataset.aosDelay = i * 300
+            v.dataset.aosDuration = 500
+        });
        
+
         AOS.init();
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+       
+        loop: true,
+        autoplay: {
+         delay: 5000,
+         },
+ 
+        
+        });
     </script>
     <script>
         var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
 
         var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-        hamburger.addEventListener("click", function() {
-        this.classList.toggle("is-active");
-        }, false);
-    });
-    }
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+            }, false);
+        });
+        }
 
-    var typed2 = new Typed('#slogan', {
-    strings: ['Dzikir', 'Fikir', 'Amal sholeh'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    backDelay: 1000,
-    startDelay: 500,
-    loop: true,
-    smartBackspace: true,
-    showCursor:false
-  });
+        var typed2 = new Typed('#slogan', {
+        strings: ['Dzikir', 'Fikir', 'Amal sholeh'],
+        typeSpeed: 0,
+        backSpeed: 0,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true,
+        smartBackspace: true,
+        showCursor:false
+        });
     </script>
-
-    <script src="/js/myscript.js"></script>
 
 </body>
 

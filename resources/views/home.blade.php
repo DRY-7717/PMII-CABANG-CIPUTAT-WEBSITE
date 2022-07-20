@@ -6,9 +6,28 @@
 @section('section')
 
 <section class="  bg-gradient-to-t from-[#14279B] to-cyan-500 relative">
-    <img src="https://source.unsplash.com/1200x600" class="w-full h-full object-cover object-center" alt="">
+
+
+    <div class="swiper mix-blend-multiply h-full">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper -z-50">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/img/h1.JPG" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="swiper-slide"><img src="/img/h2.JPG" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="swiper-slide"><img src="/img/h3.JPG" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="swiper-slide"><img src="/img/h4.JPG" alt="" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="swiper-slide"><img src="/img/h5.JPG" alt="" class="w-full h-full object-cover object-center">
+            </div>
+        </div>
+    </div>
+
+
     <div class="container px-4   lg:max-w-full lg:px-16">
-        <div class="flex flex-wrap absolute top-72">
+        <div class="flex flex-wrap absolute top-72 z-50">
             <div class="w-full lg:mx-auto  px-4 text-white  mb-14 self-center lg:mb-0 " data-aos="zoom-in"
                 data-aos-duration="2500">
                 <h2 class="text-xl mb-2 font-semibold text-secondary md:text-3xl lg:text-3xl sm:text-2xl">Hello 👋,
@@ -24,11 +43,11 @@
                     Moslem Student Movement
                 </p>
 
-                <a href="#"
+                <a href="#about"
                     class="px-10 py-2  rounded-full bg-primary text-white hover:bg-yellow-500 active:ring active:ring-yellow-200 mt-2 md:px-11 md:py-2 md:text-lg lg:px-11 lg:py-3 lg:text-lg">Let's
                     Go</a>
             </div>
-            
+
         </div>
     </div>
 </section>
@@ -153,22 +172,22 @@
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-3 ">
                     <div
                         class="bg-first shadow-md shadow-slate-500 aspect-[10/5] md:aspect-[10/6] lg:aspect-[10/4] rounded-2xl col-span-3 sm:col-span-2 lg:col-span-3 overflow-hidden grid-img group">
-                        <img src="https://source.unsplash.com/1200x400?people" alt=""
+                        <img src="/img/s1.JPG" alt=""
                             class="w-full h-full object-cover object-top group-hover:scale-125 transition duration-300">
                     </div>
                     <div
                         class="bg-first shadow-md shadow-slate-500 aspect-square rounded-2xl hidden sm:block sm:aspect-auto lg:aspect-square overflow-hidden grid-img group">
-                        <img src="https://source.unsplash.com/500x500?city" alt=""
+                        <img src="/img/a1.JPG" alt=""
                             class="w-full h-full object-cover object-center group-hover:scale-125 transition duration-300">
                     </div>
                     <div
                         class="bg-first shadow-md shadow-slate-500 aspect-square rounded-2xl hidden md:block md:aspect-auto lg:aspect-square overflow-hidden grid-img group">
-                        <img src="https://source.unsplash.com/500x500" alt=""
+                        <img src="/img/a2.JPG" alt=""
                             class="w-full h-full object-cover object-center group-hover:scale-125 transition duration-300">
                     </div>
                     <div
                         class="bg-first shadow-md shadow-slate-500 aspect-square rounded-2xl hidden lg:block  lg:aspect-square overflow-hidden grid-img group">
-                        <img src="https://source.unsplash.com/500x500?street" alt=""
+                        <img src="/img/s2.JPG" alt=""
                             class="w-full h-full object-cover object-center group-hover:scale-125 transition duration-300">
                     </div>
                 </div>
@@ -192,21 +211,20 @@
             <div class="w-full px-4 mx-auto max-w-4xl mb-11 lg:w-1/2 tokoh">
                 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 shadow-md shadow-slate-300 overflow-hidden">
                     <img class="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                        src="https://source.unsplash.com/500x500?people" alt="" width="384" height="512">
+                        src="/img/sujiwotedjo.jpg" alt="" width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <blockquote>
                             <p class="text-lg font-thin italic">
-                                “Tailwind CSS is the only framework that I've seen scale
-                                on large teams. It’s easy to customize, adapts to any design,
-                                and the build size is tiny.”
+                                "PMII sebagai gerakan mahasiswa yang menjunjung Islam rahamatan lil alamin harus bisa
+                                menangkal gerakan radikalisasi Islam dengan gerakan tasawuf,"
                             </p>
                         </blockquote>
                         <figcaption class="font-medium">
                             <div class="text-first dark:text-first">
-                                Nama Tokoh
+                                Sujiwo Tedjo
                             </div>
                             <div class="text-slate-700 dark:text-slate-500">
-                                Profesi
+                                Budayawan
                             </div>
                         </figcaption>
                     </div>
@@ -286,8 +304,71 @@
 </section>
 {{-- Section Tokoh End --}}
 
+{{-- LSO Start --}}
+<section class=" pt-20 bg-first" id="lso">
+    <div class="container px-4 mx-auto lg:px-16 lg:max-w-full">
+        <div class="w-full px-4 mx-auto max-w-4xl mb-12">
+            <h1 class="text-white text-center font-semibold text-2xl sm:text-2xl md:text-3xl lg:text-3xl">Lembaga Semi
+                Otonom (LSO)</h1>
+            <p class="mt-4 text-base sm:text-lg text-white text-center">
+                Beberapa lembaga semi otonom yang ada di PMII Cabang Ciputat :
+            </p>
+        </div>
+
+        <div class="flex flex-wrap">
+
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 lg:w-1/2">
+                <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-md  overflow-hidden" data-aos="fade-up">
+                    <img class="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                        src="https://source.unsplash.com/500x500?people" alt="" width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <figcaption class="font-medium ">
+                            <div class=" text-xl text-first dark:text-first">
+                                Pers Pergerakan
+                            </div>
+                        </figcaption>
+                        <blockquote>
+                            <p class=" text-md">
+                                Tailwind CSS is the only framework that I've seen scale
+                                on large teams. It’s easy to customize, adapts to any design,
+                                and the build size is tiny.<a href="#" class="text-blue-700 hover:underline"> launch
+                                    web</a>
+                            </p>
+
+                        </blockquote>
+
+                    </div>
+                </figure>
+            </div>
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 lg:w-1/2 ">
+                <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-md  overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <img class="lg:order-2 w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+                        src="https://source.unsplash.com/500x500?people" alt="" width="384" height="512">
+                    <div class=" lg:order-1 pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <figcaption class="font-medium lg:text-right">
+                            <div class=" text-xl text-first dark:text-first">
+                                LBH PMII Cabang Ciputat
+                            </div>
+                        </figcaption>
+                        <blockquote>
+                            <p class="text-md lg:text-right ">
+                                Tailwind CSS is the only framework that I've seen scale
+                                on large teams. It’s easy to customize, adapts to any design,
+                                and the build size is tiny
+                            </p>
+                        </blockquote>
+
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+</section>
+{{-- LSO End --}}
 {{-- Section Gallery Start --}}
-<section class="pt-36 pb-24 bg-slate-100" id="gallery">
+<section class="pt-36 pb-24 bg-slate" id="gallery">
     <div class="container px-4 lg:px-16 lg:max-w-full mx-auto">
         <div class="w-full px-4 mx-auto max-w-4xl mb-12">
             <h1 class="text-center text-first font-bold text-2xl sm:text-2xl md:text-3xl lg:text-4xl">Gallery</h1>
@@ -296,62 +377,70 @@
         </div>
 
         <div class="flex flex-wrap justify-center">
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
                     class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    <img src="/img/g1.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
                     class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    <img src="/img/g2.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
                     class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    <img src="/img/g3.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
-                    class="rounded-lg shadow-lg shadow-slate-400  overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g4.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
-                    class="rounded-lg shadow-lg shadow-slate-400  overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g5.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
-                    class="rounded-lg shadow-lg shadow-slate-400  overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g6.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
-                    class="rounded-lg shadow-lg shadow-slate-400  overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g7.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
-            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/4 md:w-1/3 doc-img">
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
                 <div
-                    class="rounded-lg shadow-lg shadow-slate-400  overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
-                    <img src="https://source.unsplash.com/400x400?people" alt=""
-                        class="w-full object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g8.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
                 </div>
             </div>
+            <div class="w-full px-4 mx-auto max-w-4xl mb-11 sm:w-1/2 lg:w-1/3 md:w-1/2 doc-img">
+                <div
+                    class="rounded-lg shadow-lg shadow-slate-400 overflow-hidden group hover:scale-90 transition  duration-700 ease-out ">
+                    <img src="/img/g9.JPG" alt=""
+                        class="aspect-[7/6] object-cover object-center group-hover:scale-150 transition duration-1000 ease-in">
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

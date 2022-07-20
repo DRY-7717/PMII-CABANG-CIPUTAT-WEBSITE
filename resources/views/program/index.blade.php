@@ -8,7 +8,7 @@
 
         <div class="w-full px-4 mb-4">
             <h1
-                class="text-xl md:text-3xl lg:text-3xl lg:text-center lg:mb-7 uppercase font-black text-first tracking-wide">
+                class="text-xl text-center mb-4 md:text-3xl lg:text-3xl lg:text-center lg:mb-7 uppercase font-black text-first tracking-wide">
                 {{ $bigtitle }}</h1>
         </div>
 
@@ -20,14 +20,47 @@
                 @if (request('user'))
                 <input type="hidden" name="user" value="{{ request('user') }}">
                 @endif
-                <div class="grup flex  lg:max-w-2xl mx-auto">
-                    <input type="text"
-                        class="px-5 py-2 w-4/5 rounded-lg rounded-r-none outline-none border-2 focus:ring focus:ring-blue-500 focus:border-0"
-                        placeholder="Search Program..." name="search" autocomplete="off"
-                        value="{{ request('search') }}">
 
-                    <button type="submit"
-                        class="text-white py-2 px-3 bg-first rounded-lg rounded-l-none w-1/5">Search</button>
+                <div class="flex flex-wrap items-center justify-center w-full">
+
+
+                    <div class="opsi  order-2  lg:order-1">
+                        <select name="category" id=""
+                            class=" shadow-md outline-none mx-2  border-2 py-3 px-3 rounded-lg mt-3 lg:mt-0">
+                            <option value="">Pilih Category</option>
+                            @foreach ($categories as $category)
+                            @if (request('category') == $category->slug)
+                            <option value="{{ $category->slug }}" selected>{{ $category->name }}</option>
+                            @else
+                            <option value="{{ $category->slug }}">{{ $category->name }}</option>
+                            @endif
+                            @endforeach
+
+                        </select>
+                    </div>
+                    <div class="opsi  order-2  lg:order-1">
+                        <select name="user" id=""
+                            class=" shadow-md outline-none mx-2  border-2 py-3 px-3 rounded-lg mt-3 lg:mt-0">
+                            <option value="">Pilih User</option>
+                            @foreach ($users as $user)
+                            @if (request('user') == $user->username)
+                            <option value="{{ $user->username }}" selected>{{ $user->name }}</option>
+                            @else
+                            <option value="{{ $user->username }}">{{ $user->name }}</option>
+                            @endif
+                            @endforeach
+
+                        </select>
+                    </div>
+
+                    <div class="grup flex w-full  lg:w-1/3  mx-2 shadow-md rounded-lg order-1  lg:order-2">
+                        <input type="text"
+                            class="px-5 py-2 w-4/5 rounded-lg rounded-r-none outline-none border-2 focus:ring focus:ring-blue-500 focus:border-0"
+                            placeholder="Search Program..." name="search" autocomplete="off"
+                            value="{{ request('search') }}">
+                        <button type="submit"
+                            class="text-white py-2 px-3 bg-first rounded-lg rounded-l-none w-2/5">Search</button>
+                    </div>
                 </div>
 
             </form>
@@ -42,7 +75,7 @@
                 <img src="{{ asset('storage/'.$programs[0]->image)}}" alt=""
                     class="rounded-xl mb-3 lg:h-96 lg:w-full object-cover  object-center">
                 @else
-                <img src="https://source.unsplash.com/1200x600?{{ $program->category->name }}" alt=""
+                <img src="https://source.unsplash.com/1200x600?{{ $programs[0]->categoryprogram->name }}" alt=""
                     class="rounded-xl mb-3 lg:h-80 lg:w-full object-cover  object-center">
                 @endif
                 <div class="card-body  py-4 lg:text-center">
@@ -69,8 +102,14 @@
         <div class="w-full px-4 ">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 @foreach ($programs->skip(1) as $program)
-                <div class="card p-6 rounded-lg shadow-xl shadow-slate-300  overflow-hidden">
-                    <img src="https://source.unsplash.com/1200x600" alt="" class="w-full rounded-xl md:h-48">
+                <div class="card p-6 rounded-lg shadow-xl shadow-slate-300  overflow-hidden relative">
+                    @if ($program->image)
+                    <img src="{{ asset('storage/'.$program->image)}}" alt=""
+                        class="rounded-xl mb-3 lg:h-60 lg:w-full object-cover  object-center">
+                    @else
+                    <img src="https://source.unsplash.com/1200x600?{{ $program->categoryprogram->name }}" alt=""
+                        class="rounded-xl mb-3 lg:h-60 lg:w-full object-cover  object-center">
+                    @endif
                     <div class="card-body py-4 ">
                         <div class="card-body  py-4 ">
                             <h1 class="text-lg md:text-xl font-semibold text-first"><a
@@ -87,10 +126,11 @@
                             </p>
                             <p class="text-justify text-base mb-6 ">{{ $program->excerpt }}</p>
 
-                            <a href="/program/{{ $program->slug }}"
-                                class="py-2 px-9   bg-blue-500 text-white rounded-md text-base">Readmore</a>
+
                         </div>
                     </div>
+                    <a href="/program/{{ $program->slug }}"
+                        class="py-2 px-9   bg-blue-500 text-white rounded-md text-base absolute bottom-4 left-5">Readmore</a>
                 </div>
                 @endforeach
             </div>
