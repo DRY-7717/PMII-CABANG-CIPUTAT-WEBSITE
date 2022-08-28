@@ -62,7 +62,7 @@
                         <li
                             class="group relative lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('team') ? 'active' : '' }}">
                             <a href="#"
-                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex lg:block sm:hidden md:hidden">Team</a>
+                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex lg:block sm:hidden md:hidden hidden">Team</a>
                             <ul
                                 class="hidden lg:block  invisible group-hover:visible  opacity-0 group-hover:opacity-100 w-52 py-5 absolute lg:top-[85px] lg:group-hover:-translate-y-[48px] lg:right-0 bg-white rounded-lg shadow-md shadow-slate-400 transition duration-300 z-50">
 
@@ -89,7 +89,7 @@
                         </li>
                         <li
                             class="lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('teamkopri') ? 'active' : '' }}">
-                            <a href="/team"
+                            <a href="/teamkopri"
                                 class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center">Team
                                 Kopri Cabang</a>
                         </li>

@@ -33,13 +33,13 @@
                         <h1 class="text-center font-semibold text-lg">Login</h1>
                     </div>
                     <div class="w-full  mb-7">
-                        <label for="username" class="  ">Username</label>
+                        <label for="username" class="">Username</label>
                         <input type="text" id="username"
                             class="w-full px-4 py-2 rounded-lg shadow-md mt-2 focus:outline-none focus:ring focus:ring-cyan-500 bg-slate-100 invalid:text-red-400 @error('username') invalid:focus:ring-red-400 @enderror  peer"
                             autocomplete="off" name="username" value="{{ old('username') }}">
 
                         @error('username')
-                        <p class="text-sm text-red-600 mt-2 ">{{ $message }}</p>
+                        <p class="text-sm text-red-600 mt-2 ">{{ $message  }}</p>
                         @enderror
 
                     </div>

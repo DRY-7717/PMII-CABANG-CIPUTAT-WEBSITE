@@ -93,7 +93,7 @@
                         </li>
                         <li
                             class="lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('teamkopri') ? 'active' : '' }}">
-                            <a href="/team"
+                            <a href="/teamkopri"
                                 class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center">Team
                                 Kopri Cabang</a>
                         </li>

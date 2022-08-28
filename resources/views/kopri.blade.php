@@ -31,21 +31,19 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper -z-50">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1200x700?animal" alt=""
+                        <div class="swiper-slide"><img src="/img/k1.JPG" alt=""
                                 class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1200x700?car" alt=""
+                        <div class="swiper-slide"><img src="/IMG/K2.JPG" alt=""
                                 class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1200x700?people" alt=""
+                        <div class="swiper-slide"><img src="/img/k3.JPG" alt=""
                                 class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1200x700?art" alt=""
+                        <div class="swiper-slide"><img src="/img/k4.JPG" alt=""
                                 class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="swiper-slide"><img src="https://source.unsplash.com/1200x700?design" alt=""
-                                class="w-full h-full object-cover object-center">
-                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -68,20 +66,20 @@
             <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
                 <div class="flex  items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
                     <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                    <h3 class="text-first font-semibold ml-2">Creative</h3>
                 </div>
             </div>
 
             <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
                 <div class="flex items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
                     <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                    <h3 class="text-first font-semibold ml-2">Inovative</h3>
                 </div>
             </div>
             <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
                 <div class="flex items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
                     <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                    <h3 class="text-first font-semibold ml-2">Responsive</h3>
                 </div>
             </div>
         </div>

@@ -198,7 +198,7 @@
 {{-- Section History End --}}
 
 {{-- Section Tokoh Start --}}
-<section class="pt-36 pb-24" id="tokoh">
+{{-- <section class="pt-36 pb-24" id="tokoh">
     <div class="container px-4 lg:px-16 lg:max-w-full mx-auto">
         <div class="w-full px-4 mx-auto max-w-4xl mb-12">
             <h1 class="text-center text-first font-bold text-2xl sm:text-2xl md:text-3xl lg:text-4xl">Tokoh</h1>
@@ -301,7 +301,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 {{-- Section Tokoh End --}}
 
 {{-- LSO Start --}}
