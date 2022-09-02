@@ -320,7 +320,7 @@
             <div class="w-full px-4 mx-auto max-w-4xl mb-11 lg:w-1/2">
                 <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-md  overflow-hidden" data-aos="fade-up">
                     <img class="w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                        src="https://source.unsplash.com/500x500?people" alt="" width="384" height="512">
+                        src="/img/pers.jpg" alt="" width="384" height="512">
                     <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption class="font-medium ">
                             <div class=" text-xl text-first dark:text-first">
@@ -329,9 +329,7 @@
                         </figcaption>
                         <blockquote>
                             <p class=" text-md">
-                                Tailwind CSS is the only framework that I've seen scale
-                                on large teams. It’s easy to customize, adapts to any design,
-                                and the build size is tiny.<a href="#" class="text-blue-700 hover:underline"> launch
+                                Pers Pergerakan adalah sebuah lembaga semi otonom yang bertugas dalam mengemas berita baik nasional ataupun internasional<a href="#" class="text-blue-700 hover:underline"> launch
                                     web</a>
                             </p>
 
@@ -344,18 +342,16 @@
                 <figure class="md:flex bg-white rounded-xl p-8 md:p-0 shadow-md  overflow-hidden" data-aos="fade-up"
                     data-aos-delay="300">
                     <img class="lg:order-2 w-28 h-28 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                        src="https://source.unsplash.com/500x500?people" alt="" width="384" height="512">
+                        src="/img/lbh.jpeg" alt="" width="384" height="512">
                     <div class=" lg:order-1 pt-6 md:p-8 text-center md:text-left space-y-4">
                         <figcaption class="font-medium lg:text-right">
                             <div class=" text-xl text-first dark:text-first">
-                                LBH PMII Cabang Ciputat
+                                LPBH PMII Cabang Ciputat
                             </div>
                         </figcaption>
                         <blockquote>
                             <p class="text-md lg:text-right ">
-                                Tailwind CSS is the only framework that I've seen scale
-                                on large teams. It’s easy to customize, adapts to any design,
-                                and the build size is tiny
+                                Lembaga Pendidikan dan Bantuan Hukum (LPBH) adalah Lembaga semi otonom yang bertugas melakukan edukasi dan pemberdayaan hukum.
                             </p>
                         </blockquote>
 
