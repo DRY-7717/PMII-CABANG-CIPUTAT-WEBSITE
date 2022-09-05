@@ -44,12 +44,12 @@ Route::get('/', function () {
 });
 // * Team
 Route::get('/team', function () {
-    return view('team', [
+    return view('team2', [
         'title' => 'PMII Cabang Ciputat | Team PMII Cabang Ciputat',
     ]);
 });
 Route::get('/teamkopri', function () {
-    return view('teamkopri', [
+    return view('teamkopri2', [
         'title' => 'PMII Cabang Ciputat | Team Kopri Cabang Ciputat',
     ]);
 });
@@ -107,23 +107,23 @@ Route::post('/allaward/award/destroy/{award:slug}', [DashboardAllawardController
 Route::get('/dashboard/program/checkslug', [DashboardProgramController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/program', DashboardProgramController::class)->middleware('auth');
 
-// * Category Admin
+// * Dashboard Category Admin
 Route::get('/dashboard/categoryprogram/checkslug', [AllCategoryController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/categoryprogram', AllCategoryController::class)->middleware('admin');
 
-// * News
+// * Dashboard News
 Route::get('/dashboard/news/checkslug', [DashboardNewsController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/news', DashboardNewsController::class)->middleware('auth');
 
-// * Award
+// * Dashboard Award
 Route::get('/dashboard/award/checkslug', [DashboardAwardController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/award', DashboardAwardController::class)->middleware('auth');
 
-// * Mail
+// * Dashboard Mail
 Route::get('/mail/secretary/checkslug', [DashboardMailController::class, 'checkslug'])->middleware('auth');
 Route::get('/mail/secretary/download/{secretary:slug}', [DashboardMailController::class, 'download']);
 Route::resource('/mail/secretary', DashboardMailcontroller::class)->middleware('auth');
-// * Import Anggota
+// * Dashboard Import Anggota
 Route::get('/import/anggotas/import', [DashboardAnggotaController::class, 'import'])->middleware('auth');
 Route::post('/import/anggotas/importexcel', [DashboardAnggotaController::class, 'importexcel'])->middleware('auth');
 Route::resource('/import/anggotas', DashboardAnggotaController::class)->middleware('auth');

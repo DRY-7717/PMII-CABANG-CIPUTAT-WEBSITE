@@ -31,8 +31,9 @@
                             @foreach ($categories as $category)
                             @if (request('category') == $category->slug)
                             <option value="{{ $category->slug }}" selected>{{ $category->name }}</option>
-                            @endif
+                            @else
                             <option value="{{ $category->slug }}">{{ $category->name }}</option>
+                            @endif
                             @endforeach
 
                         </select>
@@ -44,8 +45,9 @@
                             @foreach ($users as $user)
                             @if (request('user') == $user->username)
                             <option value="{{ $user->username }}" selected>{{ $user->name }}</option>
-                            @endif
+                            @else
                             <option value="{{ $user->username }}">{{ $user->name }}</option>
+                            @endif
                             @endforeach
 
                         </select>
@@ -71,10 +73,10 @@
             <div class="card w-full p-6 rounded-xl  shadow-lg shadow-slate-300 overflow-hidden">
                 @if ($news[0]->image)
                 <img src="{{ asset('storage/'.$news[0]->image)}}" alt=""
-                    class="rounded-xl mb-3 lg:h-96 lg:w-full object-cover  object-center">
+                    class="rounded-xl mb-3 lg:h-[500px] lg:w-full object-cover  object-center">
                 @else
                 <img src="https://source.unsplash.com/1200x600?{{ $news[0]->categoryprogram->name }}" alt=""
-                    class="rounded-xl mb-3 lg:h-80 lg:w-full object-cover  object-center">
+                    class="rounded-xl mb-3 lg:h-[500px] lg:w-full object-cover  object-center">
                 @endif
                 <div class="card-body  py-4 lg:text-center">
                     <h1 class="text-lg md:text-2xl font-semibold text-first"><a href="/program/{{ $news[0]->slug }}">{{

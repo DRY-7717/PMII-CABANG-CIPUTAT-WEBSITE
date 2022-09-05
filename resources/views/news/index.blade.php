@@ -29,8 +29,9 @@
                             @foreach ($categories as $category)
                             @if (request('category') == $category->slug)
                             <option value="{{ $category->slug }}" selected>{{ $category->name }}</option>
-                            @endif
+                            @else
                             <option value="{{ $category->slug }}">{{ $category->name }}</option>
+                            @endif
                             @endforeach
 
                         </select>
@@ -42,8 +43,9 @@
                             @foreach ($users as $user)
                             @if (request('user') == $user->username)
                             <option value="{{ $user->username }}" selected>{{ $user->name }}</option>
-                            @endif
+                            @else
                             <option value="{{ $user->username }}">{{ $user->name }}</option>
+                            @endif
                             @endforeach
 
                         </select>

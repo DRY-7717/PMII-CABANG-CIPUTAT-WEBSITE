@@ -73,10 +73,10 @@
             <div class="card w-full p-6 rounded-xl  shadow-lg shadow-slate-300 overflow-hidden">
                 @if ($programs[0]->image)
                 <img src="{{ asset('storage/'.$programs[0]->image)}}" alt=""
-                    class="rounded-xl mb-3 lg:h-96 lg:w-full object-cover  object-center">
+                    class="rounded-xl mb-3 lg:h-[500px] lg:w-full object-cover  object-center">
                 @else
                 <img src="https://source.unsplash.com/1200x600?{{ $programs[0]->categoryprogram->name }}" alt=""
-                    class="rounded-xl mb-3 lg:h-80 lg:w-full object-cover  object-center">
+                    class="rounded-xl mb-3 lg:h-[500px] lg:w-full object-cover  object-center">
                 @endif
                 <div class="card-body  py-4 lg:text-center">
                     <h1 class="text-lg md:text-2xl font-semibold text-first"><a
