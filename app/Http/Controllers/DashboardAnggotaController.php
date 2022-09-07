@@ -21,7 +21,7 @@ class DashboardAnggotaController extends Controller
 
         return view('dashboard.importanggota.index', [
             'title' => 'PMII Cabang Ciputat | Import Member',
-            'members' => Anggota::where('user_id', auth()->user()->id)->get(),
+            'members' => Anggota::all()
         ]);
     }
 

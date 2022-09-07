@@ -62,13 +62,13 @@
                         <li
                             class="group relative lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('team') ? 'active' : '' }}">
                             <a href="#"
-                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex lg:block sm:hidden md:hidden hidden">Team</a>
+                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3  lg:block sm:hidden md:hidden hidden">Team</a>
                             <ul
                                 class="hidden lg:block  invisible group-hover:visible  opacity-0 group-hover:opacity-100 w-52 py-5 absolute lg:top-[85px] lg:group-hover:-translate-y-[48px] lg:right-0 bg-white rounded-lg shadow-md shadow-slate-400 transition duration-300 z-50">
 
                                 <li
                                     class=" hover:bg-slate-100  transition duration-500 {{ Request::is('team') ? 'active' : '' }}">
-                                    <a href="/teamkopri"
+                                    <a href="/team"
                                         class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i
                                             class="fa-solid fa-users mr-2"></i>Team PMII Cabang</a>
                                 </li>
@@ -114,6 +114,11 @@
                                             class="fas fa-newspaper mr-2"></i>Berita</a>
                                 </li>
                                 <li
+                                    class=" hover:bg-slate-100  transition duration-500 {{ Request::is('talent') ? 'active' : '' }}">
+                                    <a href="/talent"
+                                        class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i class="fa-regular fa-star mr-2"></i>Talent</a>
+                                </li>
+                                <li
                                     class=" hover:bg-slate-100  transition duration-500 {{ Request::is('award') ? 'active' : '' }}">
                                     <a href="/award"
                                         class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i
@@ -139,6 +144,11 @@
                                 class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Berita</a>
                         </li>
                         <li
+                            class=" lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('talent') ? 'active' : '' }}">
+                            <a href="/talent"
+                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Talent</a>
+                        </li>
+                        <li
                             class=" lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('award') ? 'active' : '' }}">
                             <a href="/award"
                                 class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Prestasi</a>
@@ -158,7 +168,8 @@
                         <li
                             class="group lg:hover:bg-primary  transition duration-200 lg:rounded-full  flex items-center text-white relative {{ Request::is('login') ? 'active' : '' }}">
                             <a href="#"
-                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex items-center"><i
+                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex items-center">
+                                <i
                                     class="fas fa-user-alt mr-3"></i>{{
                                 auth()->user()->name }}</a>
                             <ul

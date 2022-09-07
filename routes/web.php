@@ -9,16 +9,20 @@ use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardAllawardController;
 use App\Http\Controllers\DashboardAllProgramController;
 use App\Http\Controllers\DashboardAllnewsController;
+use App\Http\Controllers\DashboardAlltalentController;
 use App\Http\Controllers\DashboardAnggotaController;
 use App\Http\Controllers\DashboardAwardController;
+use App\Http\Controllers\DashboardCategoryProduct;
 use App\Http\Controllers\DashboardMailcontroller;
 use App\Http\Controllers\DashboardNewsController;
 use App\Http\Controllers\DashboardSecretaryController;
+use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DashboardUserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ProductController;
 use App\Models\CategoryProgram;
 use App\Models\News;
 use App\Models\User;
@@ -78,6 +82,10 @@ Route::get('/award/{award:slug}', [AwardController::class, 'show']);
 Route::get('/mails', [MailController::class, 'index']);
 Route::get('/mails/{secretary:slug}', [MailController::class, 'show']);
 
+// * Talent
+Route::get('/talent', [ProductController::class,'index']);
+Route::get('/talent/{product:slug}',[ProductController::class, 'show']);
+
 // * Login
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest')->name('login');
 Route::get('/login/forgotpassword', [LoginController::class, 'forgotpassword']);
@@ -104,12 +112,20 @@ Route::get('/allaward/award', [DashboardAllawardController::class, 'index'])->mi
 Route::get('/allaward/award/{award:slug}', [DashboardAllawardController::class, 'show'])->middleware('admin');
 Route::post('/allaward/award/destroy/{award:slug}', [DashboardAllawardController::class, 'destroy'])->middleware('admin');
 
+// * All Talent
+Route::resource('/alltalent/product', DashboardAlltalentController::class)->middleware('admin');
+
+
 Route::get('/dashboard/program/checkslug', [DashboardProgramController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/program', DashboardProgramController::class)->middleware('auth');
 
 // * Dashboard Category Admin
 Route::get('/dashboard/categoryprogram/checkslug', [AllCategoryController::class, 'checkslug'])->middleware('auth');
 Route::resource('/dashboard/categoryprogram', AllCategoryController::class)->middleware('admin');
+
+// * Dashboard Category Product
+Route::get('/dashboard/categoryproduct/checkslug', [DashboardCategoryProduct::class, 'checkslug'])->middleware('auth');
+Route::resource('/dashboard/categoryproduct', DashboardCategoryProduct::class)->middleware('admin');
 
 // * Dashboard News
 Route::get('/dashboard/news/checkslug', [DashboardNewsController::class, 'checkslug'])->middleware('auth');
@@ -128,8 +144,13 @@ Route::get('/import/anggotas/import', [DashboardAnggotaController::class, 'impor
 Route::post('/import/anggotas/importexcel', [DashboardAnggotaController::class, 'importexcel'])->middleware('auth');
 Route::resource('/import/anggotas', DashboardAnggotaController::class)->middleware('auth');
 
-// *  User Control
+//  * Dashboard Product
+Route::get('/dashboard/product/checkslug', [DashboardProductController::class, 'checkslug'])->middleware('auth');
+Route::resource('/dashboard/product', DashboardProductController::class)->middleware('auth');
 
+
+
+// *  User Control
 Route::get('/dashboard/user', [DashboardUserController::class, 'editpassword'])->middleware('auth');
 Route::post('/dashboard/user/changepassword/{user:username}', [DashboardUserController::class, 'changepassword'])->middleware('auth');
 

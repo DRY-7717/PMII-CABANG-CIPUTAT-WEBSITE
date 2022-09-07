@@ -17,7 +17,7 @@
                             <h4>Pour your thoughts here</h4>
                         </div>
                         <div class="card-body">
-                            <form action="/dashboard/categoryprogram/{{ $category->slug }}" method="post" enctype="multipart/form-data">
+                            <form action="/dashboard/categoryproduct/{{ $category->slug }}" method="post" enctype="multipart/form-data">
                                 @method('put')
                                 @csrf
                                 <div class="form-group row mb-4">
@@ -69,7 +69,7 @@
     const slug = document.querySelector('#slug');
 
     name.addEventListener('change',function () {  
-        fetch('/dashboard/categoryprogram/checkslug?name=' + name.value)
+        fetch('/dashboard/categoryproduct/checkslug?name=' + name.value)
         .then(response => response.json())
         .then(data => slug.value = data.slug)
     })

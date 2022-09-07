@@ -6,7 +6,7 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>All Category Program</h1>
+            <h1>All Category Talent</h1>
         </div>
 
         <div class="section-body">
@@ -18,7 +18,7 @@
                     <div class="card shadow rounded-lg">
                         <div class="card-header flex justify-content-between">
                             <h4>Categories</h4>
-                            <a href="/dashboard/categoryprogram/create" class="btn btn-primary px-3 py-1"
+                            <a href="/dashboard/categoryproduct/create" class="btn btn-primary px-3 py-1"
                                 style="font-size: 14px"><i class="fas fa-plus"></i> Create new category</a>
                         </div>
                         <div class="card-body">
@@ -46,10 +46,10 @@
                                             </td>
 
                                             <td class="d-flex">
-                                                <a href="/dashboard/categoryprogram/{{ $category->slug }}/edit"
+                                                <a href="/dashboard/categoryproduct/{{ $category->slug }}/edit"
                                                     class="btn btn-primary mx-1"><i class="fas fa-edit"></i></a>
 
-                                                <form action="/dashboard/categoryprogram/{{ $category->slug }}"
+                                                <form action="/dashboard/categoryproduct/{{ $category->slug }}"
                                                     method="post" class="d-inline">
                                                     @method('delete')
                                                     @csrf

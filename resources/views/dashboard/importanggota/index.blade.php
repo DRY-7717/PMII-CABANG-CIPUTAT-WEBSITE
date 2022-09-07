@@ -9,7 +9,9 @@
     <section class="section">
         <div class="section-header">
             <h1>Import Data Member</h1>
+            
         </div>
+        <h6 class="text-warning">*Tolong sesuaikan format table yang tertera jika ingin mengimport file/data kader</h6>
         <div class="section-body">
             @if (session('message'))
             {!! session('message') !!}
@@ -17,6 +19,7 @@
             <div class="card shadow rounded-lg">
                 <div class="card-header flex justify-content-between">
                     <h4>Organization Member</h4>
+                    
                     <div class="d-flex">
                         <a href="/import/anggotas/import" class="btn btn-primary px-3 py-1 mx-2"
                             style="font-size: 14px"><i class="fas fa-file-excel "></i> Import Excel</a>
@@ -49,7 +52,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($members->skip(1) as $member)
+                                @foreach ($members as $member)
                                 <tr>
                                     <td>
                                         {{ $loop->iteration }}

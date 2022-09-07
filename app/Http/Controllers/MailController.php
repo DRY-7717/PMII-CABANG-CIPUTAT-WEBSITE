@@ -21,7 +21,7 @@ class MailController extends Controller
         return view('Mail.index', [
             'title' => 'PMII Cabang Ciputat | Perizinan',
             'bigtitle' => 'Mails '. $title ,
-            'mails' => Secretary::latest()->filter(request(['search', 'user']))->paginate(6)->withQueryString(),
+            'mails' => Secretary::where('description','Diterima')->latest()->filter(request(['search', 'user']))->paginate(6)->withQueryString(),
             'users' => User::all()
         ]);
     }

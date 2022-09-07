@@ -19,7 +19,7 @@ class DashboardMailcontroller extends Controller
     {
         //
         return view('dashboard.mail.index', [
-            'title' => 'PMII Cabang Ciputat | All News',
+            'title' => 'PMII Cabang Ciputat | All Mail',
             'mails' => Secretary::where('user_id', auth()->user()->id)->get(),
         ]);
     }

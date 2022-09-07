@@ -15,7 +15,7 @@
                         $program->user->name }}</a> | <a
                         href="/programs?category={{ $program->categoryprogram->slug }}">{{
                         $program->categoryprogram->name }}</a></p>
-                <div class="card-header mb-7 overflow-hidden rounded-lg h-96 md:h-56 lg:h-80">
+                <div class="card-header mb-7 overflow-hidden rounded-lg h-96 md:h-56 lg:h-[500px]">
                     @if ($program->image)
                     <img src="{{ asset('storage/'.$program->image) }}" alt=""
                         class="w-full h-full object-cover object-center">

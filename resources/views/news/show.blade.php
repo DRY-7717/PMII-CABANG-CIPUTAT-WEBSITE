@@ -15,7 +15,7 @@
                         $news->user->name }}</a> | <a
                         href="/news/searchpage/?category={{ $news->categoryprogram->slug }}">{{
                         $news->categoryprogram->name }}</a></p>
-                <div class="card-header mb-7 overflow-hidden rounded-lg h-96 md:h-56 lg:h-80">
+                <div class="card-header mb-7 overflow-hidden rounded-lg h-96 md:h-56 lg:h-[500px]">
                     @if ($news->image)
                     <img src="{{ asset('storage/'.$news->image) }}" alt=""
                         class="w-full h-full object-cover object-center">

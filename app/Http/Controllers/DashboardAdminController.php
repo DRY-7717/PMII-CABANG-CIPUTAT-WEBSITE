@@ -6,6 +6,7 @@ use App\Imports\AnggotaImport;
 use App\Models\Anggota;
 use App\Models\Award;
 use App\Models\News;
+use App\Models\Product;
 use App\Models\Program;
 use App\Models\Secretary;
 use Illuminate\Http\Request;
@@ -27,7 +28,8 @@ class DashboardAdminController extends Controller
             'programs' => Program::all(),
             'awards' => Award::all(),
             'news' => News::all(),
-            'members' => Anggota::all()
+            'members' => Anggota::all(),
+            'talents' => Product::all()
         ]);
     }
 

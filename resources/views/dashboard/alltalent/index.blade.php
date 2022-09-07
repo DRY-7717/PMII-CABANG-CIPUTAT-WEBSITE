@@ -6,7 +6,7 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>All Category Program</h1>
+            <h1>All Talent</h1>
         </div>
 
         <div class="section-body">
@@ -17,9 +17,7 @@
                     @endif
                     <div class="card shadow rounded-lg">
                         <div class="card-header flex justify-content-between">
-                            <h4>Categories</h4>
-                            <a href="/dashboard/categoryprogram/create" class="btn btn-primary px-3 py-1"
-                                style="font-size: 14px"><i class="fas fa-plus"></i> Create new category</a>
+                            <h4>All Talent</h4>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -29,28 +27,37 @@
                                             <th class="text-center">
                                                 #
                                             </th>
+
+                                            <th>Title</th>
                                             <th>Category</th>
-                                            <th>Slug</th>
+                                            <th>Produsen</th>
+                                            <th>No Telp</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($categories as $category)
+                                        @foreach ($talents as $talent)
                                         <tr>
-                                            <td>
+                                            <td class="align-middle">
                                                 {{ $loop->iteration }}
                                             </td>
-                                            <td>{{ $category->name }}</td>
+                                            <td>{{ $talent->title }}</td>
                                             <td class="align-middle">
-                                                {{ $category->slug }}
+                                                {{ $talent->categoryproduct->name }}
+                                            </td>
+                                            <td class="align-middle">
+                                                {{ $talent->produsen }}
+                                            </td>
+                                            <td class="align-middle">
+                                                {{ $talent->telp }}
                                             </td>
 
-                                            <td class="d-flex">
-                                                <a href="/dashboard/categoryprogram/{{ $category->slug }}/edit"
-                                                    class="btn btn-primary mx-1"><i class="fas fa-edit"></i></a>
 
-                                                <form action="/dashboard/categoryprogram/{{ $category->slug }}"
-                                                    method="post" class="d-inline">
+                                            <td class="d-flex">
+                                                <a href="/alltalent/product/{{ $talent->slug }}"
+                                                    class="btn btn-info mx-1"><i class="fas fa-eye"></i></a>
+                                                <form action="/alltalent/product/{{ $talent->slug }}" method="post"
+                                                    class="d-inline">
                                                     @method('delete')
                                                     @csrf
                                                     <button type="submit" class="btn btn-danger border-0 mx-1"

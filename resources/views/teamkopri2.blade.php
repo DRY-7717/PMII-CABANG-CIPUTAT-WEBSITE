@@ -374,7 +374,7 @@
                     <div
                         class=" card rounded-lg w-full   overflow-hidden bg-white transition duration-300 ease-out shadow-lg hover:scale-90">
                         <div class="card-header h-96 lg:h-64 overflow-hidden">
-                            <img src="/img/kopri/1.JPG"
+                            <img src="/img/kopri/10.JPEG"
                                 class="w-full  h-full lg:h-[380px] object-cover object-top md:object-top lg:object-center hover:scale-125  duration-500 ease-in"
                                 alt="">
                         </div>
@@ -384,7 +384,7 @@
                             </div>
 
                             <div class="title w-full ">
-                                <p class="mt-5 text-center text-first text-base italic mb-5">Wakil Ketua 3</p>
+                                <p class="mt-5 text-center text-first text-base italic mb-5">Wakil Ketua 1</p>
 
                                 <div class="flex justify-center gap-2 mb-6">
                                     {{-- facebook --}}
@@ -418,17 +418,17 @@
                     <div
                         class=" card rounded-lg w-full   overflow-hidden bg-white transition duration-300 ease-out shadow-lg hover:scale-90">
                         <div class="card-header h-96 lg:h-64 overflow-hidden">
-                            <img src="/img/kopri/6.JPG"
+                            <img src="/img/kopri/11.JPEG"
                                 class="w-full  h-full lg:h-[380px] object-cover object-top md:object-top lg:object-center hover:scale-125  duration-500 ease-in"
                                 alt="">
                         </div>
                         <div class="card-body">
                             <div class="name-box w-full px-7 py-3 bg-first opacity-75 text-center">
-                                <h3 class="text-white">Ella Nurlaili</h3>
+                                <h3 class="text-white">Yuni Ngindana Zulfa</h3>
                             </div>
 
                             <div class="title w-full ">
-                                <p class="mt-5 text-center text-first text-base italic mb-5">Wakil Sekertaris 1</p>
+                                <p class="mt-5 text-center text-first text-base italic mb-5">Wakil Sekertaris 3</p>
 
                                 <div class="flex justify-center gap-2 mb-6">
                                     {{-- facebook --}}

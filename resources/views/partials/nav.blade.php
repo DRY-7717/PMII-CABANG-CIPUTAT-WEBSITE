@@ -114,6 +114,9 @@
                                         class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i
                                             class="fas fa-newspaper mr-2"></i>Berita</a>
                                 </li>
+                                <li class=" hover:bg-slate-100  transition duration-500"><a href="/talent"
+                                        class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i class="fa-regular fa-star mr-2"></i></i>Talent</a>
+                                </li>
                                 <li class=" hover:bg-slate-100  transition duration-500"><a href="/award"
                                         class="text-base lg:text-base text-slate-800 hover:text-first  py-1  mx-3 flex items-center mb-2"><i
                                             class="fas fa-medal mr-2"></i>Prestasi</a>
@@ -135,6 +138,11 @@
                             class="lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('news') ? 'active' : '' }}">
                             <a href="/news"
                                 class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Berita</a>
+                        </li>
+                        <li
+                            class="lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('talent') ? 'active' : '' }}">
+                            <a href="/talent"
+                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Talent</a>
                         </li>
                         <li
                             class=" lg:hidden group lg:hover:bg-primary transition duration-200 lg:rounded-full {{ Request::is('award') ? 'active' : '' }}">

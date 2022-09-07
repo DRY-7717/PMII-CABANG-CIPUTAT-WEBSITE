@@ -52,7 +52,7 @@ class DashboardProgramController extends Controller
         //
 
 
-
+    
         $validated = $request->validate([
             'title' => 'required|max:255',
             'slug' => 'required|unique:programs',

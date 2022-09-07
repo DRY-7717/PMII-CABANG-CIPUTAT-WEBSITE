@@ -28,7 +28,7 @@
             @can('admin')
             <ul class="sidebar-menu mb-3">
                 <li
-                    class="dropdown {{ Request::is('allprogram/program') ? 'active' : ''  || Request::is('allnews/news') ? 'active' : '' || Request::is('allaward/award') ? 'active' : ''}} ">
+                    class="dropdown {{ Request::is('allprogram/program') ? 'active' : ''  || Request::is('allnews/news') ? 'active' : '' || Request::is('allaward/award') ? 'active' : '' || Request::is('alltalent/product') ? 'active' : ''}} ">
                     <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>All Posts</span></a>
                     <ul class="dropdown-menu">
 
@@ -41,20 +41,25 @@
                         <li class="{{ Request::is('allaward/award*') ? 'active' : false }}"><a class="nav-link"
                                 href="/allaward/award"><i class="fas fa-medal"></i>All Achievement
                             </a></li>
+                        <li class="{{ Request::is('alltalent/product*') ? 'active' : false }}"><a class="nav-link"
+                                href="/alltalent/product"><i class="fas fa-star "></i>All Talent
+                            </a></li>
                     </ul>
                 </li>
             </ul>
             @endcan
             <li
-                class="dropdown {{ Request::is('dashboard/program*') ? 'active' : ''  || Request::is('dashboard/news*') ? 'active' : '' || Request::is('dashboard/award*') ? 'active' : '' || Request::is('mail/secretary*') ? 'active' : '' || Request::is('import/anggotas*') ? 'active' : ''}} ">
-                <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Posts</span></a>
+                class="dropdown {{ Request::is('dashboard/program*') ? 'active' : ''  || Request::is('dashboard/news*') ? 'active' : '' || Request::is('dashboard/award*') ? 'active' : '' || Request::is('mail/secretary*') ? 'active' : '' || Request::is('import/anggotas*') ? 'active' : '' || Request::is('dashboard/product*') ? 'active' : ''}}" >
+                <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Update</span></a>
                 <ul class="dropdown-menu">
 
-                    <li class="{{ Request::is('dashboard/program') ? 'active' : false }}"><a class="nav-link"
-                            href="/dashboard/program"><i class="fas fa-clipboard-list"></i> My Programs</a></li>
+                    <li class="{{ Request::is('dashboard/program*') ? 'active' : false }}"><a class="nav-link"
+                            href="/dashboard/program"><i class="fas fa-clipboard-list"></i>Programs</a></li>
 
                     <li class="{{ Request::is('dashboard/news*') ? 'active' : false }}"><a class="nav-link"
                             href="/dashboard/news"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li class="{{ Request::is('dashboard/product*') ? 'active' : false }}"><a class="nav-link"
+                            href="/dashboard/product"><i class="fas fa-star "></i> Talent</a></li>
 
                     <li class="{{ Request::is('dashboard/award*') ? 'active' : false }}"><a class="nav-link"
                             href="/dashboard/award"><i class="fas fa-medal"></i> Achievement
@@ -73,7 +78,10 @@
         <ul class="sidebar-menu mb-3">
             <li class="menu-header">Categories</li>
             <li class="{{ Request::is('dashboard/categoryprogram*') ? 'active' : false }}"><a class="nav-link"
-                    href="/dashboard/categoryprogram"><i class="fas fa-th-list"></i> <span>All category</span></a>
+                    href="/dashboard/categoryprogram"><i class="fas fa-th-list"></i> <span>Category Program</span></a>
+            </li>
+            <li class="{{ Request::is('dashboard/categoryproduct*') ? 'active' : false }}"><a class="nav-link"
+                    href="/dashboard/categoryproduct"><i class="fas fa-th-list"></i> <span>Category Talent</span></a>
             </li>
         </ul>
         @endcan
@@ -86,11 +94,5 @@
             </li>
         </ul>
         @endcan
-        <ul class="sidebar-menu mb-3">
-            <li class="menu-header">Coba</li>
-            <li class="{{ Request::is('coba') ? 'active' : false }}"><a class="nav-link"
-                    href="/coba"><i class="fas fa-envelope"></i> <span>Coba</span></a>
-            </li>
-        </ul>
     </aside>
 </div>

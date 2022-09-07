@@ -12,7 +12,7 @@
         </div>
         <div class="section-body">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-primary">
                             <i class="far fa-user"></i>
@@ -22,12 +22,12 @@
                                 <h4>Total Members</h4>
                             </div>
                             <div class="card-body">
-                                {{ $members->count() ? $members->count()-1 : '0' }}
+                                {{ $members->count() }}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-danger">
                             <i class="fas fa-clipboard-list"></i>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-warning">
                             <i class="far fa-newspaper"></i>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
                         <div class="card-icon bg-success">
                             <i class="fas fa-medal"></i>
@@ -68,6 +68,21 @@
                             </div>
                             <div class="card-body">
                                 {{ $awards->count() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="card card-statistic-1">
+                        <div class="card-icon bg-info">
+                            <i class="fas fa-star "></i>
+                        </div>
+                        <div class="card-wrap">
+                            <div class="card-header">
+                                <h4>Talents</h4>
+                            </div>
+                            <div class="card-body">
+                                {{ $talents->count() }}
                             </div>
                         </div>
                     </div>
@@ -105,7 +120,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($members->skip(1) as $member)
+                                @foreach ($members as $member)
                                 <tr>
                                     <td>
                                         {{ $loop->iteration }}

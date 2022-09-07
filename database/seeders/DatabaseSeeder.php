@@ -3,10 +3,12 @@
 namespace Database\Seeders;
 
 use App\Models\Award;
+use App\Models\Categoryproduct;
 use Illuminate\Database\Seeder;
 use App\Models\Program;
 use App\Models\Categoryprogram;
 use App\Models\News;
+use App\Models\Product;
 use App\Models\Secretary;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -25,6 +27,7 @@ class DatabaseSeeder extends Seeder
         News::factory(25)->create();
         Award::factory(25)->create();
         Secretary::factory(25)->create();
+        Product::factory(25)->create();
 
         Categoryprogram::create([
             'name' => 'Web Programming',
@@ -34,13 +37,53 @@ class DatabaseSeeder extends Seeder
             'name' => 'Personal',
             'slug' => 'personal',
         ]);
+        Categoryprogram::create([
+            'name' => 'Sport',
+            'slug' => 'sport',
+        ]);
+        Categoryprogram::create([
+            'name' => 'Healthy',
+            'slug' => 'health',
+        ]);
+        Categoryprogram::create([
+            'name' => 'Bussines',
+            'slug' => 'Bussines',
+        ]);
+        Categoryprogram::create([
+            'name' => 'Food',
+            'slug' => 'Food',
+        ]);
+        Categoryprogram::create([
+            'name' => 'Education',
+            'slug' => 'education',
+        ]);
+
+        Categoryproduct::create([
+            'name' => 'Web Developer',
+            'slug' => 'webdeveloper',
+        ]);
+        Categoryproduct::create([
+            'name' => 'Mobile Developer',
+            'slug' => 'mobiledeveloper',
+        ]);
+        Categoryproduct::create([
+            'name' => 'Dokter',
+            'slug' => 'dokter',
+        ]);
+        Categoryproduct::create([
+            'name' => 'Designer',
+            'slug' => 'designer',
+        ]);
+        Categoryproduct::create([
+            'name' => 'Entrepreneur',
+            'slug' => 'entrepreneur',
+        ]);
 
         User::create([
             'name' => 'PMII Cabang Ciputat',
             'title' => 'PC. Ciputat',
             'initials' => 'CC',
             'username' => 'pmiicabangciputat',
-            'email' => 'wicaksanabimaarya01@gmail.com',
             'role' => 1,
             'password' => Hash::make('password')
         ]);
@@ -49,16 +92,54 @@ class DatabaseSeeder extends Seeder
             'title' => 'Sek. Ciputat',
             'initials' => 'SPC',
             'username' => 'sekertarispmiiciputat',
-            'email' => 'wicaksana@gmail.com',
             'role' => 2,
             'password' => Hash::make('password')
         ]);
         User::create([
-            'name' => 'PMII Komnivpam',
+            'name' => 'PMII KOMNIVPAM',
             'title' => 'PK. Unpam',
             'initials' => 'PKU',
             'username' => 'pmiikomnivpam',
-            'email' => 'wicaksana01@gmail.com',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAST',
+            'title' => 'PK. Saintek',
+            'initials' => 'PKS',
+            'username' => 'pmiikomfast',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKDA',
+            'title' => 'PK. Dakwah',
+            'initials' => 'PKD',
+            'username' => 'pmiikomfakda',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKTAR',
+            'title' => 'PK. Tarbiyah',
+            'initials' => 'PKT',
+            'username' => 'pmiikomfaktar',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKES',
+            'title' => 'PK. Kesehatan',
+            'initials' => 'PKK',
+            'username' => 'pmiikomfakes',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFEIS',
+            'title' => 'PK. Ekonomi&Bisnis',
+            'initials' => 'PKF',
+            'username' => 'pmiikomfeis',
             'role' => 3,
             'password' => Hash::make('password')
         ]);

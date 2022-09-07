@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categoryproduct;
-use App\Models\Categoryprogram;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
-
-class AllCategoryController extends Controller
+class DashboardCategoryProduct extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +15,9 @@ class AllCategoryController extends Controller
     public function index()
     {
         //
-
-
-
-        return view('dashboard.categories.index', [
+        return view('dashboard.categoriestalent.index', [
             'title' => 'PMII Cabang Ciputat | All category',
-            'categories' => Categoryprogram::all()
+            'categories' => Categoryproduct::all()
         ]);
     }
 
@@ -34,7 +29,7 @@ class AllCategoryController extends Controller
     public function create()
     {
         //
-        return view('dashboard.categories.create', [
+        return view('dashboard.categoriestalent.create', [
             'title' => 'PMII Cabang Ciputat | Create category',
         ]);
     }
@@ -48,15 +43,14 @@ class AllCategoryController extends Controller
     public function store(Request $request)
     {
         //
-
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'slug' => 'required'
         ]);
 
-        Categoryprogram::create($validatedData);
+        Categoryproduct::create($validatedData);
 
-        return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
+        return redirect('/dashboard/categoryproduct')->with('message', '<div class="alert alert-success" role="alert">
         Your category has been added
       </div>');
     }
@@ -64,27 +58,26 @@ class AllCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Categoryprogram  $categoryprogram
+     * @param  \App\Models\Categoryproduct  $categoryproduct
      * @return \Illuminate\Http\Response
      */
-    public function show(Categoryprogram $categoryprogram)
+    public function show(Categoryproduct $categoryproduct)
     {
         //
-        return $categoryprogram;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Categoryprogram  $categoryprogram
+     * @param  \App\Models\Categoryproduct  $categoryproduct
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categoryprogram $categoryprogram)
+    public function edit(Categoryproduct $categoryproduct)
     {
         //
-        return view('dashboard.categories.edit', [
+        return view('dashboard.categoriestalent.edit', [
             'title' => 'PMII Cabang Ciputat | Edit category',
-            'category' => $categoryprogram
+            'category' => $categoryproduct
         ]);
     }
 
@@ -92,27 +85,26 @@ class AllCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Categoryprogram  $categoryprogram
+     * @param  \App\Models\Categoryproduct  $categoryproduct
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categoryprogram $categoryprogram)
+    public function update(Request $request, Categoryproduct $categoryproduct)
     {
         //
-
         $rules = [
             'name' => 'required|max:255'
         ];
 
-        if ($categoryprogram->slug != $request->slug) {
+        if ($categoryproduct->slug != $request->slug) {
             $rules['slug'] = 'required';
         }
 
         $validated = $request->validate($rules);
 
-        Categoryprogram::where('id', $categoryprogram->id)
+        Categoryproduct::where('id', $categoryproduct->id)
             ->update($validated);
 
-        return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
+        return redirect('/dashboard/categoryproduct')->with('message', '<div class="alert alert-success" role="alert">
         Your category has been updated
       </div>');
     }
@@ -120,23 +112,21 @@ class AllCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Categoryprogram  $categoryprogram
+     * @param  \App\Models\Categoryproduct  $categoryproduct
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categoryprogram $categoryprogram)
+    public function destroy(Categoryproduct $categoryproduct)
     {
         //
+        Categoryproduct::destroy($categoryproduct->id);
 
-        Categoryprogram::destroy($categoryprogram->id);
-
-        return redirect('/dashboard/categoryprogram')->with('message', '<div class="alert alert-success" role="alert">
+        return redirect('/dashboard/categoryproduct')->with('message', '<div class="alert alert-success" role="alert">
         Your category has been deleted
       </div>');
     }
-
     public function checkslug(Request $request)
     {
-        $slug = SlugService::createSlug(Categoryprogram::class, 'slug', $request->name);
+        $slug = SlugService::createSlug(Categoryproduct::class, 'slug', $request->name);
         return response()->json(['slug' => $slug]);;
     }
 }
