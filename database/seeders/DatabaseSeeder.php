@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password')
         ]);
         User::create([
-            'name' => 'PMII KOMFAKES',
+            'name' => 'PMII KOMFAKKES',
             'title' => 'PK. Kesehatan',
             'initials' => 'PKK',
             'username' => 'pmiikomfakes',
@@ -137,9 +137,57 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'PMII KOMFEIS',
-            'title' => 'PK. Ekonomi&Bisnis',
-            'initials' => 'PKF',
+            'title' => 'PK. Ekonomi & Bisnis',
+            'initials' => 'PKE',
             'username' => 'pmiikomfeis',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKSYAHUM',
+            'title' => 'PK. Syariah & Hukum',
+            'initials' => 'PKSH',
+            'username' => 'pmiikomfaksyahum',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFUSPERTUM',
+            'title' => 'PK. Ushuluddin & Perguruan tinggi umum',
+            'initials' => 'PKFP',
+            'username' => 'pmiikomfuspertum',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKDISH',
+            'title' => 'PK. Dirasat Islamiyah',
+            'initials' => 'PKDS',
+            'username' => 'pmiikomfakdish',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAKA',
+            'title' => 'PK. Adab',
+            'initials' => 'PKA',
+            'username' => 'pmiikomfaka',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFAPSI',
+            'title' => 'PK. Psychology',
+            'initials' => 'PKP',
+            'username' => 'pmiikomfapsi',
+            'role' => 3,
+            'password' => Hash::make('password')
+        ]);
+        User::create([
+            'name' => 'PMII KOMFISIP',
+            'title' => 'PK. Sosial dan Ilmu Politik',
+            'initials' => 'PKFI',
+            'username' => 'pmiikomfisip',
             'role' => 3,
             'password' => Hash::make('password')
         ]);

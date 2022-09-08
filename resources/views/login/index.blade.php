@@ -56,9 +56,6 @@
                     <div class="w-full  mt-7 mb-4">
                         <button type="submit" class="px-4 py-2 bg-first w-full rounded-lg text-white">Submit</button>
                     </div>
-                    <div class="w full mb-4">
-                        <a href="/login/forgotpassword" class="block text-center text-sm mb-1 text-blue-600">Forgot
-                            Password</a>
                         <a href="/" class="block text-center text-sm mb-1 text-blue-600">Back to Home</a>
                     </div>
                 </form>
