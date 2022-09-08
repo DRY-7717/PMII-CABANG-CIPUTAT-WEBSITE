@@ -28,6 +28,7 @@ class DashboardAlltalentController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**

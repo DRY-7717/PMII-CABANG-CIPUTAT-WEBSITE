@@ -47,9 +47,6 @@
                         </li>
 
                         </li>
-                        <li class="group  lg:hover:bg-primary transition duration-200 lg:rounded-full"><a href="/#tokoh"
-                                class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Tokoh</a>
-                        </li>
                         <li class=" group lg:hover:bg-primary transition duration-200 lg:rounded-full"><a
                                 href="/#gallery"
                                 class="text-base lg:text-[15px] text-slate-800 hover:text-first lg:text-white lg:group-hover:text-white py-1  mx-3 flex">Gallery</a>

@@ -58,6 +58,61 @@
                                     </div>
                                 </div>
                                 
+                                
+                             
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Instagram</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control @error('instagram') is-invalid @enderror "
+                                            name="instagram" id="instagram" value="{{ old('instagram',$product->instagram) }}">
+                                        @error('instagram')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Facebook</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control @error('facebook') is-invalid @enderror "
+                                            name="facebook" id="facebook" value="{{ old('facebook',$product->facebook) }}">
+                                        @error('facebook')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">No Hp / Wa</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control @error('telp') is-invalid @enderror "
+                                            name="telp" id="telp" value="{{ old('telp',$product->telp) }}">
+                                        @error('telp')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                              
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"
+                                        id="category">Category</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="categoryproduct_id" id="category">
+                                            @foreach ($categories as $category)
+                                            @if (old('categoryproduct_id',$product->categoryproduct_id) == $category->id)
+                                            <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
+                                            @else
+                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                            @endif
+                                            @endforeach
+
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="form-group row mb-4">
                                     <label
                                         class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image Profile</label>
@@ -80,30 +135,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">No Hp / Wa</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <input type="text" class="form-control @error('telp') is-invalid @enderror "
-                                            name="telp" id="telp" value="{{ old('telp',$product->telp) }}">
-                                        @error('telp')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Instagram</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <input type="text" class="form-control @error('instagram') is-invalid @enderror "
-                                            name="instagram" id="instagram" value="{{ old('instagram',$product->instagram) }}">
-                                        @error('instagram')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div>
-                                </div>
+                                
                                 <div class="form-group row mb-4">
                                     <label
                                         class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Contoh Produk 1</label>
@@ -248,35 +280,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Facebook</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <input type="text" class="form-control @error('facebook') is-invalid @enderror "
-                                            name="facebook" id="facebook" value="{{ old('facebook',$product->facebook) }}">
-                                        @error('facebook')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div>
-                                </div>
-                              
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"
-                                        id="category">Category</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <select class="form-control selectric" name="categoryproduct_id" id="category">
-                                            @foreach ($categories as $category)
-                                            @if (old('categoryproduct_id',$product->categoryproduct_id) == $category->id)
-                                            <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
-                                            @else
-                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                            @endif
-                                            @endforeach
-
-                                        </select>
-                                    </div>
-                                </div>
+                               
                                 <div class="form-group row mb-4">
                                     <label
                                         class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Thumbnail</label>

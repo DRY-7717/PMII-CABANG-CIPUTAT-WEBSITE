@@ -658,6 +658,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-ml-px {
   margin-left: -1px;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mb-32 {
+  margin-bottom: 8rem;
+}
+.mb-28 {
+  margin-bottom: 7rem;
+}
 .block {
   display: block;
 }
@@ -757,6 +766,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[25px\] {
   width: 25px;
 }
+.w-96 {
+  width: 24rem;
+}
+.w-\[700px\] {
+  width: 700px;
+}
+.w-\[900px\] {
+  width: 900px;
+}
+.w-\[1000px\] {
+  width: 1000px;
+}
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -850,6 +871,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .rounded-\[50\%\] {
   border-radius: 50%;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .rounded-r-none {
   border-top-right-radius: 0px;
@@ -1035,6 +1059,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
+.p-7 {
+  padding: 1.75rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1143,6 +1170,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-5 {
   padding-top: 1.25rem;
 }
+.pt-32 {
+  padding-top: 8rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.pb-36 {
+  padding-bottom: 9rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1185,6 +1221,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[10px\] {
   font-size: 10px;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1374,9 +1418,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline {
   outline-style: solid;
 }
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
 .ring-gray-300 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+}
+.ring-slate-200 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(226 232 240 / var(--tw-ring-opacity));
+}
+.ring-slate-100 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(241 245 249 / var(--tw-ring-opacity));
 }
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;

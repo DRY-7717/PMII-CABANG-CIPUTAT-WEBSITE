@@ -58,30 +58,22 @@
     </svg>
 </section>
 
-<section class="pt-10 ">
-    <div class="container px-4   lg:max-w-full  lg:px-16  mx-auto">
-        <div
-            class="slogan-box w-full lg:bg-slate-200 lg:rounded-full   flex flex-wrap justify-evenly items-center rounded-md " data-aos="zoom-in" data-aos-duration="1000">
+<section class="">
+    <h1 class="text-6xl text-first text-center font-semibold mb-8" data-aos="fade-down" data-aos-duration="500">Gender</h1>
+    <div class="container px-4   lg:max-w-full  lg:px-16  mx-auto mb-28" >
+        <div class="gender-box w-full    flex flex-wrap justify-evenly items-center ">
 
-            <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
-                <div class="flex  items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
-                    <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Creative</h3>
+            <div class="card-gender lg:w-1/2 p-2 text-justify "  data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+                <div class="content-gender p-6 rounded-xl shadow-lg ring-2 ring-slate-100">
+                  Gender merupakan pandangan yang diyakini masyarakat tentang bagaimana seharusnya perempuan dan laki-laki bertingkah laku atay berfikir
                 </div>
             </div>
-
-            <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
-                <div class="flex items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
-                    <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Inovative</h3>
+            <div class="card-gender lg:w-1/2 p-2 text-justify " data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                <div class="content-gender p-6 rounded-xl shadow-lg ring-2 ring-slate-100">
+                   Gender adalah perbedaan peran, fungsi dan tanggung jawab antara laki-laki dan perempuan yang merupakan hasil kontruksi sosial dan dapat berubah sesuai perkembangan zaman
                 </div>
             </div>
-            <div class="slogan w-full max-w-4xl p-3  lg:w-1/3 md:w-1/3">
-                <div class="flex items-center lg:justify-center bg-slate-200 lg:bg-inherit p-2  rounded-md">
-                    <img src="https://source.unsplash.com/80x80" alt="" class="rounded-md">
-                    <h3 class="text-first font-semibold ml-2">Responsive</h3>
-                </div>
-            </div>
+            
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -99,17 +91,11 @@
 
         <div class="flex flex-wrap">
             <div class="column-1 w-full  sm:w-full md:w-full  px-4 lg:w-1/2">
-                <div class="row w-full flex flex-wrap">
-                    <div class="column-1 lg:px-3 lg:w-1/2 " data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">
-                        <p class="text-white text-justify md:text-md lg:text-lg">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Dolorum voluptatem consequatur nihil consequuntur nemo omnis saepe unde.
-                            Veritatis, et tempora!</p>
+                <div class="row w-full">
+                    <div class="column-1  lg:w-full " data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">
+                        <p class="text-white text-justify md:text-md lg:text-xl">Korps Pergerakan Mahasiswa Islam Indonesia Putri (KOPRI) merupakan lembaga perempuan yang berada dalam tubuh PMII. Kopri menjadi bagian aset "pemberdayaan perempuan di PMII". Bersifat Independen dan mempunyai Garis koordinasi dengan Cabang yang fokus pada persoalan perempuan di PMII dan isu-isu perempuan secara umum</p>
                     </div>
-                    <div class="column-2 lg:w-1/2 lg:px-3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="700">
-                        <p class="text-white text-justify md:text-md lg:text-lg">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Dolorum voluptatem consequatur nihil consequuntur nemo omnis saepe unde.
-                            Veritatis, et tempora!</p>
-                    </div>
+                   
                 </div>
 
                 <div class="row image-about mt-7 lg:px-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
@@ -123,56 +109,42 @@
 
             <div class="column-2 w-full  sm:w-full md:w-full   px-4 lg:w-1/2 ">
                 <div class="row w-full px-4 mb-3 mt-5 sm:mt-5 md:mt-5 lg:mt-0 ">
-                    <h1 class="text-secondary font-bold text-2xl md:text-3xl lg:text-4xl"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="900">MISI</h1>
-                    <h3 class="text-white text-lg md:text-xl lg:text-2xl font-semibold mt-2 text-justify" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1100">Lorem ipsum
-                        dolor sit, amet
-                        consectetur adipisicing elit. Atque consectetur quasi aspernatur possimus deleniti porro non
-                        quas at iste vitae ratione libero, aliquid exercitationem sapiente ut molestiae culpa quisquam?
-                        Ea.</h3>
+                    <h1 class="text-secondary font-bold text-2xl md:text-3xl lg:text-4xl"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="900">VISI</h1>
+                    <h3 class="text-white text-lg md:text-xl lg:text-3xl font-semibold mt-2 text-justify" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1100">
+                      Terciptanya Kopri PMII Cabang Ciputat yang cerdas, aktif dan bermatabat dalam menghadapi gelombang transformasi digital.</h3>
                 </div>
 
                 <div class="row w-full px-4 mb-3  mt-11 ">
-                    <h1 class="text-secondary font-bold text-2xl md:text-3xl lg:text-4xl" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">VISI</h1>
-                    <h3 class="text-white text-lg md:text-xl lg:text-2xl  mt-2 text-justify mb-7" data-aos="fade-right" data-aos-duration="500" data-aos-delay="900">Adapun beberapa visi
-                        kami untuk mencapai misi kami adalah :</h3>
+                    <h1 class="text-secondary font-bold text-2xl md:text-3xl lg:text-4xl" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">MISI</h1>
+                    <h3 class="text-white text-lg md:text-xl lg:text-2xl  mt-2 text-justify mb-7" data-aos="fade-right" data-aos-duration="500" data-aos-delay="900">Adapun beberapa misi
+                        kami untuk mencapai visi kami adalah :</h3>
 
                     <div class="flex flex-wrap  w-full justify-center ">
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
+                        <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
                                 <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                                <h3 class="text-first font-semibold ml-2">Mengkonsolidasikan seluruh aktifits anggota kader dibidang intelektual dan teknologi informasi.</h3>
                             </div>
                         </div>
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
+                        <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
                                 <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                                <h3 class="text-first font-semibold ml-2">Mendukung kegiatan yang mendorong sikap humanis dan anti intoleran</h3>
                             </div>
                         </div>
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
+                        <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
                                 <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                                <h3 class="text-first font-semibold ml-2">Menstimulir proses ketahanan anggota dan kader dengan integritas komunal bukan individu</h3>
                             </div>
                         </div>
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
+                        <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
                                 <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
+                                <h3 class="text-first font-semibold ml-2">Memperbaiki citra Kopri PMII Cabang Ciputat melalui pelaksanaan, peran dan peningkatan kualitas sumber daya anggota yang profesional </h3>
                             </div>
                         </div>
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
-                            <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
-                            </div>
-                        </div>
-                        <div class="visi px-2 w-full lg:w-1/2 mb-4 ">
-                            <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
-                                <h3 class="text-first font-semibold ml-2">Bima Arya Wicaksana</h3>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -189,23 +161,9 @@
 <section class="pt-36 pb-32 ">
     <div class="container w-full  mx-auto lg:max-w-full   lg:px-16">
 
-        <h1 class="text-first text-2xl md:text-3xl lg:text-5xl text-center font-bold mb-11" data-aos="fade-down" data-aos-duration="500">Address</h1>
-
-        <div class="flex flex-wrap ">
-            <div class="w-full px-4 lg:w-1/2" data-aos="fade-up" data-aos-duration="500">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.648513854335!2d106.75358771744385!3d-6.3098225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efdafd223f91%3A0x6dd7b9d70a16b6ec!2sPMII%20Cabang%20Ciputat!5e0!3m2!1sen!2sid!4v1658175624684!5m2!1sen!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full h-72"></iframe>
-            </div>
-            <div class="w-full px-4 lg:w-1/2" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-                <h2 class="text-xl font-medium mt-4 sm:mt-4 md:mt-4 lg:mt-0">Silahkan yang ingin berkung silaturahim
-                    langsung ke alamat ini :</h2>
-                <p class="italic mt-2 text-lg text-first  ">"Jl. Ibnu Sina I, Pisangan, Kec. Ciputat Tim., Kota
-                    Tangerang Selatan, Banten 15419"</p>
-                <p class="text-base">Atau bisa langsung klik gmaps di samping atau di atas.</p>
-            </div>
-        </div>
+        <h1 class="text-first text-2xl md:text-3xl lg:text-5xl text-center font-bold mb-11 italic" data-aos="fade-down" data-aos-duration="500">"Perempuan yang pikirannya sudah dicerdaskan, pemandangannya sudah diperluas, tidak akan sanggup lagi hidup di dalam dunia nenek moyangnya"</h1>
+        
+      
     </div>
 </section>
 @endsection

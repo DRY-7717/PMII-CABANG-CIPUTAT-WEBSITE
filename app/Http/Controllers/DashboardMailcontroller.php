@@ -49,6 +49,7 @@ class DashboardMailcontroller extends Controller
         //
         $validatedData = $request->validate([
             'title' => 'required|max:255',
+            'slug' => 'required|unique:secretaries',
             'file' => 'required|file|mimes:pdf|max:2045',
             'body' => 'required'
         ]);
@@ -113,7 +114,7 @@ class DashboardMailcontroller extends Controller
         ];
 
         if ($secretary->slug != $request->slug) {
-            $rules['slug'] = 'required|unique:secretary';
+            $rules['slug'] = 'required|unique:secretaries';
         }
 
         $validatedData = $request->validate($rules);

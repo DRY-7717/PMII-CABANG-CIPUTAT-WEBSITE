@@ -17,7 +17,7 @@
                     <article class="text-justify mb-5 text-base md:text-lg">
                         {!! $mail->body !!}
 
-                        <p>Surat perizinan : <a href="/mail/secretary/download/{{ $mail->slug }}">Bukti Surat</a></p>
+                        <p>Surat perizinan : <a href="/mail/secretary/download/{{ $mail->slug }}" class="text-blue-500">Bukti Surat</a></p>
                         <p>Description : {{ $mail->description }}</p>
                     </article>
 
