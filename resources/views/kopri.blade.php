@@ -100,8 +100,8 @@
 
                 <div class="row image-about mt-7 lg:px-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                     <div
-                        class="aboutImage w-full bg-white h-[500px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden">
-                        <img src="https://source.unsplash.com/1200x1500?people" class="object-cover object-center"
+                        class="aboutImage w-full bg-white h-[500px] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden flex justify-center items-center">
+                        <img src="/img/model.png" class="object-cover object-center"
                             alt="">
                     </div>
                 </div>
@@ -122,25 +122,25 @@
                     <div class="flex flex-wrap  w-full justify-center ">
                         <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
+                                <img src="/img/teamwork.png" alt="" class="rounded-md w-[50px] h-[50px]">
                                 <h3 class="text-first font-semibold ml-2">Mengkonsolidasikan seluruh aktifits anggota kader dibidang intelektual dan teknologi informasi.</h3>
                             </div>
                         </div>
                         <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
+                                <img src="/img/unity.png" alt="" class="rounded-md w-[50px] h-[50px]">
                                 <h3 class="text-first font-semibold ml-2">Mendukung kegiatan yang mendorong sikap humanis dan anti intoleran</h3>
                             </div>
                         </div>
                         <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
+                                <img src="/img/defence.png" alt="" class="rounded-md w-[50px] h-[50px]">
                                 <h3 class="text-first font-semibold ml-2">Menstimulir proses ketahanan anggota dan kader dengan integritas komunal bukan individu</h3>
                             </div>
                         </div>
                         <div class="visi px-2 w-full lg:w-full mb-4 ">
                             <div class="inner-visi rounded-md  bg-blue-200 flex  items-center p-2">
-                                <img src="https://source.unsplash.com/50x50" alt="" class="rounded-md">
+                                <img src="/img/resources.png" alt="" class="rounded-md w-[50px] h-[50px]">
                                 <h3 class="text-first font-semibold ml-2">Memperbaiki citra Kopri PMII Cabang Ciputat melalui pelaksanaan, peran dan peningkatan kualitas sumber daya anggota yang profesional </h3>
                             </div>
                         </div>
