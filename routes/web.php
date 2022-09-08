@@ -88,10 +88,10 @@ Route::get('/talent/{product:slug}',[ProductController::class, 'show']);
 
 // * Login
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest')->name('login');
-Route::get('/login/forgotpassword', [LoginController::class, 'forgotpassword']);
-Route::post('/login/forgotpassword', [LoginController::class, 'sendlink']);
-Route::get('/login/resetpassword{token}', [LoginController::class, 'resetpassword'])->name('login.resetpassword');
-Route::post('/login/resetpassword', [LoginController::class, 'updatepassword']);
+// Route::get('/login/forgotpassword', [LoginController::class, 'forgotpassword']);
+// Route::post('/login/forgotpassword', [LoginController::class, 'sendlink']);
+// Route::get('/login/resetpassword{token}', [LoginController::class, 'resetpassword'])->name('login.resetpassword');
+// Route::post('/login/resetpassword', [LoginController::class, 'updatepassword']);
 
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);

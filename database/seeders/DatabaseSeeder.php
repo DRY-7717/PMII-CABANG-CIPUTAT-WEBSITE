@@ -145,7 +145,7 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'PMII KOMFAKSYAHUM',
-            'title' => 'PK. Syariah & Hukum',
+            'title' => 'PK. FAKSYAHUM',
             'initials' => 'PKSH',
             'username' => 'pmiikomfaksyahum',
             'role' => 3,
@@ -153,7 +153,7 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'PMII KOMFUSPERTUM',
-            'title' => 'PK. Ushuluddin & Perguruan tinggi umum',
+            'title' => 'PK. FUSPERTUM',
             'initials' => 'PKFP',
             'username' => 'pmiikomfuspertum',
             'role' => 3,
@@ -161,7 +161,7 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'PMII KOMFAKDISH',
-            'title' => 'PK. Dirasat Islamiyah',
+            'title' => 'PK. FAKDISH',
             'initials' => 'PKDS',
             'username' => 'pmiikomfakdish',
             'role' => 3,
@@ -185,7 +185,7 @@ class DatabaseSeeder extends Seeder
         ]);
         User::create([
             'name' => 'PMII KOMFISIP',
-            'title' => 'PK. Sosial dan Ilmu Politik',
+            'title' => 'PK. FISIP',
             'initials' => 'PKFI',
             'username' => 'pmiikomfisip',
             'role' => 3,
